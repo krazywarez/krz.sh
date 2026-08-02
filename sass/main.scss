@@ -137,6 +137,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 // ---- App page: actions + screenshots ---------------------------------------
 .app-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 2rem 0 1rem; }
+.prose a.btn { color: var(--text); }
+.prose a.btn-primary { color: var(--btn-fg); }
 .privacy-link { font-size: 0.9rem; margin: 0.25rem 0 0; }
 
 .shots {

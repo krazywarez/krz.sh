@@ -4,7 +4,7 @@ description = "A native iOS client for Cloudflare."
 weight = 3
 
 [extra]
-link = "https://github.com/krazywarez/solar"
+link = "https://git.krz.sh/solar"
 link_label = "Source"
 privacy = "/privacy/solar/"
 +++
