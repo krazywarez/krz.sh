@@ -1,0 +1,17 @@
+base_url = "https://krz.sh"
+title = "krazy warez"
+description = "Small, durable software focused on utility, privacy, and control."
+default_language = "en"
+
+compile_sass = true
+minify_html = true
+build_search_index = false
+generate_feeds = false
+
+[markdown]
+smart_punctuation = true
+
+[extra]
+email = "root@krz.sh"
+github = "https://github.com/krazywarez"
+tagline = "Small, durable software focused on utility, privacy, and control."

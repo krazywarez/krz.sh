@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p class="tagline">small, durable software · privacy-first tools you control</p>
+
+<div class="hero-actions">
+  <a class="btn btn-primary" href="{{ get_url(path="/services/") | safe }}">view services &rarr;</a>
+  <a class="btn" href="{{ get_url(path="/apps/") | safe }}">browse apps</a>
+</div>
+
+<article class="prose">
+  {{ section.content | safe }}
+</article>
+{% endblock content %}

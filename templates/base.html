@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default(value="en") }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="{{ get_url(path="main.css", cachebust=true) | safe }}">
+  <link rel="icon" href="{{ get_url(path="favicon.svg") | safe }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ get_url(path="/") | safe }}">krazy warez</a>
+    <nav class="site-nav">
+      <a href="{{ get_url(path="/services/") | safe }}">services</a>
+      <span class="sep">·</span>
+      <a href="{{ get_url(path="/apps/") | safe }}">apps</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {% block content %}{% endblock content %}
+  </main>
+
+  <footer class="site-footer">
+    <p class="foot-links"><a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a> · <a href="{{ config.extra.github }}">github</a> · &copy; {{ now() | date(format="%Y") }} · public domain</p>
+  </footer>
+</body>
+</html>

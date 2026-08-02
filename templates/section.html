@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title | lower }} &middot; {{ config.title }}{% endblock title %}
+{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
+
+{% block content %}
+<article class="prose">
+  <h1 class="page-label">{{ section.title }}</h1>
+  {{ section.content | safe }}
+</article>
+
+{% if section.pages %}
+<ul class="plainlist">
+  {% for page in section.pages %}
+  <li>
+    <span class="pl-main">
+      <span class="pl-name">{{ page.title }}</span>
+      {% if page.description %}<span class="pl-desc">— {{ page.description }}</span>{% endif %}
+    </span>
+    <span class="pl-links">
+      {% if page.extra.appstore %}<a class="pl-link" href="{{ page.extra.appstore }}">app store &rarr;</a>
+      {% else %}<span class="pl-link pl-link-off" aria-disabled="true">app store — soon</span>{% endif %}
+      {% if page.extra.link %}<a class="pl-link" href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }} &rarr;</a>{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endblock content %}
