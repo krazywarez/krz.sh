@@ -4,7 +4,7 @@ title = "krazy warez"
 
 ## about
 
-krazy warez builds native apps and self-hosted, privacy-respecting frontends. two people, a few servers, no investors. local-first data, few dependencies, no ads, no tracking.
+krz builds native apps and self-hosted, privacy-respecting frontends. two people, a few servers, no investors. local-first data, few dependencies, no ads, no tracking.
 
 ## principles
 
