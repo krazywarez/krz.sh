@@ -13,7 +13,7 @@ service used to draw contribution graphs — is described below.
 
 ## what we collect
 
-we have no krazy warez account system, no analytics, no ads, and no
+we have no krz account system, no analytics, no ads, and no
 third-party trackers or SDKs. the only data that ever reaches a server we
 operate is described under "the Hutch Stats service" below, and it is limited
 to the public Sourcehut usernames you ask to see contribution graphs for.

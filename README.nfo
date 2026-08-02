@@ -1,0 +1,31 @@
+┌──────────────────────────────────────────────────────────────┐
+│  K R Z . S H                               [ KRZ ]   krz.sh  │
+└──────────────────────────────────────────────────────────────┘
+
+WHAT
+  source for krz.sh, the krz website. built with zola.
+
+DEVELOP
+      zola serve
+
+  open http://127.0.0.1:1111.
+
+BUILD
+      zola build
+
+  output goes to public/.
+
+STRUCTURE
+  config.toml      site config
+  content/         pages (home, services/, apps/, about/)
+  templates/       tera templates
+  sass/main.scss   styles, compiled to main.css
+  static/          assets, favicon.svg, CNAME
+
+DEPLOY
+  pushing to main builds and publishes to github pages via
+  .github/workflows/deploy.yml. the custom domain is in static/CNAME.
+
+┌──────────────────────────────────────────────────────────────┐
+│  krz.sh                                                      │
+└──────────────────────────────────────────────────────────────┘

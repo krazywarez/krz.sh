@@ -1,5 +1,5 @@
 +++
-title = "krazy warez"
+title = "krz"
 +++
 
 ## about

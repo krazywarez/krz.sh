@@ -12,7 +12,7 @@ and we receive none of your data.
 
 ## what we collect
 
-nothing. no krazy warez account, no analytics, no ads, no third-party trackers
+nothing. no krz account, no analytics, no ads, no third-party trackers
 or SDKs.
 
 ## what stays on your device

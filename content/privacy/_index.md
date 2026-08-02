@@ -1,6 +1,6 @@
 +++
 title = "Privacy"
-description = "Privacy policies for krazy warez iOS apps."
+description = "Privacy policies for krz iOS apps."
 sort_by = "weight"
 template = "section.html"
 page_template = "page.html"

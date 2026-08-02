@@ -1,6 +1,6 @@
 +++
 title = "Apps"
-description = "Small, durable apps and privacy-focused frontends from krazy warez."
+description = "Small, durable apps and privacy-focused frontends from krz."
 sort_by = "weight"
 template = "section.html"
 page_template = "page.html"

@@ -1,10 +1,10 @@
 +++
 title = "Services"
-description = "Public self-hosted services from krazy warez."
+description = "Public self-hosted services from krz."
 sort_by = "weight"
 +++
 
-Public services hosted by krazy warez.
+Public services hosted by krz.
 
 These are maintained on a best-effort basis. Logging and retention are kept
 minimal where practical.
