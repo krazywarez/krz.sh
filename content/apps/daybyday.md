@@ -6,7 +6,8 @@ weight = 5
 [extra]
 link = "https://github.com/krazywarez/daybyday"
 link_label = "Source"
-appstore = "https://apps.apple.com/app/day-by-day/id000000000"
+appstore = "https://apps.apple.com/us/app/daybyday-learn/id6760321939"
+privacy = "/privacy/daybyday/"
 +++
 
 Day by Day is a gentle, ad-free iOS app that helps children learn days, weeks,

@@ -6,6 +6,7 @@ weight = 3
 [extra]
 link = "https://github.com/krazywarez/solar"
 link_label = "Source"
+privacy = "/privacy/solar/"
 +++
 
 Solar is an iOS client for [Cloudflare](https://cloudflare.com) — manage DNS,

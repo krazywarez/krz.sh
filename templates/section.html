@@ -14,14 +14,16 @@
   {% for page in section.pages %}
   <li>
     <span class="pl-main">
-      <span class="pl-name">{{ page.title }}</span>
+      <a class="pl-name" href="{{ page.permalink | safe }}">{{ page.title }}</a>
       {% if page.description %}<span class="pl-desc">— {{ page.description }}</span>{% endif %}
     </span>
+    {% if not section.extra.plain %}
     <span class="pl-links">
       {% if page.extra.appstore %}<a class="pl-link" href="{{ page.extra.appstore }}">app store &rarr;</a>
       {% else %}<span class="pl-link pl-link-off" aria-disabled="true">app store — soon</span>{% endif %}
       {% if page.extra.link %}<a class="pl-link" href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }} &rarr;</a>{% endif %}
     </span>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
