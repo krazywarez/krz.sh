@@ -13,5 +13,4 @@ smart_punctuation = true
 
 [extra]
 email = "root@krz.sh"
-github = "https://github.com/krazywarez"
 tagline = "Small, durable software focused on utility, privacy, and control."
