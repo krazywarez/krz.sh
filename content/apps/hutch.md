@@ -40,13 +40,13 @@ from patch review to trackers, builds, and repositories, Hutch is built to make
 SourceHut feel at home on iOS.
 
 <div class="shots">
-<figure><img loading="lazy" src="https://img.cleberg.net/apps/hutch/screenshots/iphone/01_patch.jpg" alt="Patch review"><figcaption>review patches anywhere</figcaption></figure>
-<figure><img loading="lazy" src="https://img.cleberg.net/apps/hutch/screenshots/iphone/02_thread.jpg" alt="Threaded inbox"><figcaption>stay on top of discussions</figcaption></figure>
-<figure><img loading="lazy" src="https://img.cleberg.net/apps/hutch/screenshots/iphone/03_builds.jpg" alt="Builds"><figcaption>monitor builds in real time</figcaption></figure>
-<figure><img loading="lazy" src="https://img.cleberg.net/apps/hutch/screenshots/iphone/04_tickets.jpg" alt="Tickets"><figcaption>manage issues on the go</figcaption></figure>
-<figure><img loading="lazy" src="https://img.cleberg.net/apps/hutch/screenshots/iphone/05_repo.jpg" alt="Repository diff"><figcaption>explore your code</figcaption></figure>
-<figure><img loading="lazy" src="https://img.cleberg.net/apps/hutch/screenshots/iphone/06_projects.jpg" alt="Projects"><figcaption>everything in one place</figcaption></figure>
-<figure><img loading="lazy" src="https://img.cleberg.net/apps/hutch/screenshots/iphone/07_actions.jpg" alt="Build submission"><figcaption>take action instantly</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/hutch/screenshots/iphone/01_patch.jpg" alt="Patch review"><figcaption>review patches anywhere</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/hutch/screenshots/iphone/02_thread.jpg" alt="Threaded inbox"><figcaption>stay on top of discussions</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/hutch/screenshots/iphone/03_builds.jpg" alt="Builds"><figcaption>monitor builds in real time</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/hutch/screenshots/iphone/04_tickets.jpg" alt="Tickets"><figcaption>manage issues on the go</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/hutch/screenshots/iphone/05_repo.jpg" alt="Repository diff"><figcaption>explore your code</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/hutch/screenshots/iphone/06_projects.jpg" alt="Projects"><figcaption>everything in one place</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/hutch/screenshots/iphone/07_actions.jpg" alt="Build submission"><figcaption>take action instantly</figcaption></figure>
 </div>
 
 ## major features
@@ -65,10 +65,3 @@ SourceHut feel at home on iOS.
 - share actions across repositories, files, commits, tickets, builds, and profiles
 - pull-to-refresh, loading, empty, and error states across major screens
 - Keychain-backed auth with secure SourceHut personal access tokens
-
-## resources
-
-- [project homepage](https://sr.ht/~ccleberg/Hutch/)
-- [issue tracker](https://todo.sr.ht/~ccleberg/Hutch/)
-- [hutch-devel mailing list](https://lists.sr.ht/~ccleberg/hutch-devel)
-- [hutch-announce mailing list](https://lists.sr.ht/~ccleberg/hutch-announce)
