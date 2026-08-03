@@ -38,5 +38,4 @@ minimal where practical.
 - [1mb](https://rogue.krz.sh/1mb/) — extension of 1kb, showing what's possible with 1mb
 - [FlashPaper](https://paste.krz.sh) — one-time encrypted password and secret sharing
 - [org-live](https://org.krz.sh) — a basic org-mode editor for the web
-- [projects](https://projects.krz.sh) — bare nginx directory listing of web-based projects
 - [Slash](https://slash.krz.sh) — bookmark and link sharing platform
