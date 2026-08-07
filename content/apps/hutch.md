@@ -4,7 +4,7 @@ description = "A native iOS client for SourceHut."
 weight = 1
 
 [extra]
-link = "https://git.krz.sh/hutch"
+link = "https://git.krz.sh/krz/hutch"
 link_label = "Source"
 appstore = "https://apps.apple.com/us/app/hutch-for-sourcehut/id6760742299"
 privacy = "/privacy/hutch/"
