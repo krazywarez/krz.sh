@@ -20,7 +20,7 @@ STRUCTURE
   content/         pages (home, services/, apps/, about/)
   templates/       tera templates
   sass/main.scss   styles, compiled to main.css
-  static/          assets, favicon.svg, CNAME
+  static/          assets, favicon.svg, og.png
   assets/          logo sources; build.sh regenerates the icons
 
 DEPLOY
@@ -35,9 +35,6 @@ DEPLOY
   cloudflare fronts krz.sh and caches static assets for a year. asset
   urls in templates/base.html are cachebusted so changes propagate;
   anything else needs a manual purge.
-
-  static/CNAME is left over from github pages and no longer sets the
-  domain.
 
 ┌──────────────────────────────────────────────────────────────┐
 │  krz.sh                                                      │
