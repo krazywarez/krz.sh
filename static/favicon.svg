@@ -1,4 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#0a0a0b"/>
-  <text x="16" y="22" font-family="ui-monospace, monospace" font-size="16" font-weight="700" fill="#6f9dff" text-anchor="middle">▚</text>
+  <style>
+    .fg { fill: #17171a; }
+    .ac { fill: #2f6bd6; }
+    @media (prefers-color-scheme: dark) {
+      .fg { fill: #f1f1ef; }
+      .ac { fill: #6f9dff; }
+    }
+  </style>
+  <rect class="fg" x="4" y="4" width="24" height="4"/>
+  <rect class="fg" x="4" y="24" width="24" height="4"/>
+  <rect class="fg" x="4" y="8" width="4" height="16"/>
+  <rect class="fg" x="24" y="8" width="4" height="16"/>
+  <rect class="ac" x="12" y="12" width="8" height="8"/>
 </svg>
