@@ -21,6 +21,7 @@ STRUCTURE
   templates/       tera templates
   sass/main.scss   styles, compiled to main.css
   static/          assets, favicon.svg, CNAME
+  assets/          logo sources; build.sh regenerates the icons
 
 DEPLOY
   pushing to main builds and publishes to github pages via

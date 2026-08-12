@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <rect width="1200" height="1200" fill="#fbfbf9"/>
+  <!-- content band: 1200x630, centered vertically for a post-render crop -->
+  <g transform="translate(0,285)">
+    <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#d9d8d2" stroke-width="2"/>
+
+    <!-- mark, 120x120 at (112,225) -->
+    <g transform="translate(112,225) scale(3.75)">
+      <g fill="#17171a">
+        <rect x="4" y="4" width="24" height="4"/>
+        <rect x="4" y="24" width="24" height="4"/>
+        <rect x="4" y="8" width="4" height="16"/>
+        <rect x="24" y="8" width="4" height="16"/>
+      </g>
+      <rect x="12" y="12" width="8" height="8" fill="#2f6bd6"/>
+    </g>
+
+    <text x="272" y="314" font-family="SF Mono, Menlo, monospace" font-size="84" font-weight="700" fill="#17171a" letter-spacing="-2">krz.sh</text>
+    <text x="112" y="403" font-family="SF Mono, Menlo, monospace" font-size="24" fill="#5c5c5f">Small, durable software focused on utility, privacy, and control.</text>
+  </g>
+</svg>
