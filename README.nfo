@@ -24,8 +24,20 @@ STRUCTURE
   assets/          logo sources; build.sh regenerates the icons
 
 DEPLOY
-  pushing to main builds and publishes to github pages via
-  .github/workflows/deploy.yml. the custom domain is in static/CNAME.
+  pushing main runs .githooks/pre-push, which builds with zola and
+  rsyncs public/ to homelab:/var/www/krz.sh/. the sync uses --delete,
+  so the remote mirrors public/ exactly.
+
+  git does not clone hooks. enable them once per checkout:
+
+      git config core.hooksPath .githooks
+
+  cloudflare fronts krz.sh and caches static assets for a year. asset
+  urls in templates/base.html are cachebusted so changes propagate;
+  anything else needs a manual purge.
+
+  static/CNAME is left over from github pages and no longer sets the
+  domain.
 
 ┌──────────────────────────────────────────────────────────────┐
 │  krz.sh                                                      │
