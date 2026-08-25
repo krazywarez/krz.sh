@@ -4,7 +4,7 @@ description = "An educational iOS app that helps children learn the calendar."
 weight = 5
 
 [extra]
-link = "https://git.krz.sh/krz/daybyday"
+link = "https://gitbay.org/krz/daybyday"
 link_label = "Source"
 appstore = "https://apps.apple.com/us/app/daybyday-learn/id6760321939"
 privacy = "/privacy/daybyday/"

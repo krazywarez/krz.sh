@@ -7,4 +7,4 @@ page_template = "page.html"
 +++
 
 Native apps and privacy-respecting frontends. Each one is small, focused, and
-built to last. Source is at [git.krz.sh](https://git.krz.sh).
+built to last. Source is at [gitbay.org/krz](https://gitbay.org/krz).

@@ -4,7 +4,7 @@ description = "DNS and SSL analysis, in your pocket."
 weight = 2
 
 [extra]
-link = "https://git.krz.sh/krz/domain-dig"
+link = "https://gitbay.org/krz/domain-dig"
 link_label = "Source"
 appstore = "https://apps.apple.com/us/app/domaindig/id6760368004"
 privacy = "/privacy/domain-dig/"
