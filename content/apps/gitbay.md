@@ -6,6 +6,7 @@ weight = 4
 [extra]
 link = "https://gitbay.org/krz/gitbay-ios"
 link_label = "Source"
+privacy = "/privacy/gitbay/"
 # appstore = "https://apps.apple.com/us/app/gitbay/id<APP_ID>"  — add on publish
 +++
 
