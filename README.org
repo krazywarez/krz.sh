@@ -1,0 +1,43 @@
+#+title: krz.sh
+
+* what
+source for krz.sh, the krz website. built with zola.
+
+* develop
+#+begin_src sh
+zola serve
+#+end_src
+
+open http://127.0.0.1:1111.
+
+* build
+#+begin_src sh
+zola build
+#+end_src
+
+output goes to public/.
+
+* structure
+#+begin_example
+config.toml      site config
+content/         pages (home, services/, apps/, about/)
+templates/       tera templates
+sass/main.scss   styles, compiled to main.css
+static/          assets, favicon.svg, og.png
+assets/          logo sources; build.sh regenerates the icons
+#+end_example
+
+* deploy
+pushing main runs .githooks/pre-push, which builds with zola and
+rsyncs public/ to homelab:/var/www/krz.sh/. the sync uses --delete,
+so the remote mirrors public/ exactly.
+
+git does not clone hooks. enable them once per checkout:
+
+#+begin_src sh
+git config core.hooksPath .githooks
+#+end_src
+
+cloudflare fronts krz.sh and caches static assets for a year. asset
+urls in templates/base.html are cachebusted so changes propagate;
+anything else needs a manual purge.
