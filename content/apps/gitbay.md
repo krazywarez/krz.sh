@@ -6,7 +6,7 @@ weight = 4
 [extra]
 link = "https://gitbay.org/krz/gitbay-ios"
 link_label = "Source"
-privacy = "/privacy/gitbay/"
+privacy = "https://gitbay.org/privacy"
 appstore = "https://apps.apple.com/us/app/gitbay/id6806399095"
 +++
 
@@ -35,6 +35,16 @@ pretending a phone is a workstation.
 - watch builds, pick a job, read the logs
 - read releases and the wiki
 - explore repositories, follow activity, and read profiles
+
+## interface
+
+<div class="shots">
+<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/01_dashboard.jpg" alt="Dashboard"><figcaption>what is waiting on you</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/02_repo.jpg" alt="Repository"><figcaption>every repository surface in one list</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/03_mr_list.jpg" alt="Merge requests"><figcaption>merge requests, open through merged</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/04_mr_detail.jpg" alt="Merge request detail"><figcaption>description, checks, reviews, commits</figcaption></figure>
+<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/05_diff.jpg" alt="Unified diff"><figcaption>read the diff, then decide</figcaption></figure>
+</div>
 
 ## READMEs that render properly
 

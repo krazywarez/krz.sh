@@ -17,7 +17,8 @@
   </p>
   {% endif %}
   {% if page.extra.privacy %}
-  <p class="privacy-link"><a href="{{ get_url(path=page.extra.privacy) | safe }}">privacy policy &rarr;</a></p>
+  {% if "://" in page.extra.privacy %}{% set privacy_url = page.extra.privacy %}{% else %}{% set privacy_url = get_url(path=page.extra.privacy) %}{% endif %}
+  <p class="privacy-link"><a href="{{ privacy_url | safe }}">privacy policy &rarr;</a></p>
   {% endif %}
 </article>
 {% endblock content %}
