@@ -39,11 +39,11 @@ pretending a phone is a workstation.
 ## interface
 
 <div class="shots">
-<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/01_dashboard.jpg" alt="Dashboard"><figcaption>what is waiting on you</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/02_repo.jpg" alt="Repository"><figcaption>every repository surface in one list</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/03_mr_list.jpg" alt="Merge requests"><figcaption>merge requests, open through merged</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/04_mr_detail.jpg" alt="Merge request detail"><figcaption>description, checks, reviews, commits</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/gitbay/screenshots/iphone/05_diff.jpg" alt="Unified diff"><figcaption>read the diff, then decide</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/01_dashboard.jpg" alt="Dashboard"><figcaption>what is waiting on you</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/02_repo.jpg" alt="Repository"><figcaption>every repository surface in one list</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/03_mr_list.jpg" alt="Merge requests"><figcaption>merge requests, open through merged</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/04_mr_detail.jpg" alt="Merge request detail"><figcaption>description, checks, reviews, commits</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/05_diff.jpg" alt="Unified diff"><figcaption>read the diff, then decide</figcaption></figure>
 </div>
 
 ## READMEs that render properly

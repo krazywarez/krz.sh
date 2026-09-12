@@ -41,13 +41,13 @@ everything about a domain on one report — tap through the certificate chain,
 email checks, and open ports.
 
 <div class="shots">
-<figure><img loading="lazy" src="https://i.krz.sh/apps/domaindig/screenshots/iPhone/01.png" alt="Lookup and DNS records"><figcaption>run a lookup, see everything</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/domaindig/screenshots/iPhone/02.png" alt="Record types and email security"><figcaption>every record type and email check</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/domaindig/screenshots/iPhone/03.png" alt="SSL certificate and chain"><figcaption>full TLS certificate and chain</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/domaindig/screenshots/iPhone/04.png" alt="IP location and open ports"><figcaption>IP geolocation and open ports</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/domaindig/screenshots/iPhone/05.png" alt="Saved domains"><figcaption>save the domains you watch</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/domaindig/screenshots/iPhone/06.png" alt="Lookup history"><figcaption>history, kept on device</figcaption></figure>
-<figure><img loading="lazy" src="https://i.krz.sh/apps/domaindig/screenshots/iPhone/07.png" alt="Resolver settings"><figcaption>choose your DNS resolver</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/01.jpg" alt="Lookup and DNS records"><figcaption>run a lookup, see everything</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/02.jpg" alt="Record types and email security"><figcaption>every record type and email check</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/03.jpg" alt="SSL certificate and chain"><figcaption>full TLS certificate and chain</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/04.jpg" alt="IP location and open ports"><figcaption>IP geolocation and open ports</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/05.jpg" alt="Saved domains"><figcaption>save the domains you watch</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/06.jpg" alt="Lookup history"><figcaption>history, kept on device</figcaption></figure>
+<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/07.jpg" alt="Resolver settings"><figcaption>choose your DNS resolver</figcaption></figure>
 </div>
 
 ## details that matter
