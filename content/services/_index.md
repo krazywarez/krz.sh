@@ -29,6 +29,7 @@ minimal where practical.
 - [FlashPaper](https://paste.krz.sh) — one-time encrypted password and secret sharing
 - [SearXNG](https://search.krz.sh) — a privacy-respecting open metasearch engine
 - [Send](https://send.krz.sh) — simple, private file sharing
+- [Slash](https://slash.krz.sh) — bookmark and link sharing platform; account required
 
 ## software i maintain
 
