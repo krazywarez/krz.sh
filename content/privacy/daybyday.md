@@ -1,7 +1,7 @@
 +++
 title = "Day by Day — Privacy Policy"
 description = "Privacy policy for Day by Day, the calendar-learning app for children."
-weight = 4
+weight = 3
 +++
 
 _last updated: 2 august 2026_

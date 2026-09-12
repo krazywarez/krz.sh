@@ -1,7 +1,7 @@
 +++
 title = "gitbay"
 description = "A native iOS client for gitbay, a CLI-first git forge."
-weight = 4
+weight = 3
 
 [extra]
 link = "https://gitbay.org/krz/gitbay-ios"

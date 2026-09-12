@@ -12,11 +12,9 @@ minimal where practical.
 ## proxies / front-ends
 
 - [AnonymousOverflow](https://ao.krz.sh) — StackOverflow alternative front-end
-- [SkunkyArt](https://art.krz.sh) — DeviantArt alternative front-end
 - [BiblioReads](https://br.krz.sh) — Goodreads alternative front-end
 - [BreezeWiki](https://bw.krz.sh) — Fandom alternative front-end
 - [Gothub](https://gh.krz.sh) — alternative GitHub interface
-- [hn](https://hn.krz.sh) — Hacker News proxy
 - [LibremDB](https://ld.krz.sh) — IMDb alternative front-end
 - [Binternet](https://pin.krz.sh) — Pinterest alternative front-end
 - [Piped](https://pipedapi.krz.sh) — YouTube alternative front-end
@@ -28,14 +26,16 @@ minimal where practical.
 - [Hat.sh](https://hat.krz.sh) — simple, fast, secure client-side file encryption
 - [LibreTranslate](https://lt.krz.sh) — a translation engine
 - [Mazanoke](https://mz.krz.sh) — local image optimizer that runs in your browser
-- [Office](https://office.krz.sh) — the world's smallest office suite
+- [FlashPaper](https://paste.krz.sh) — one-time encrypted password and secret sharing
 - [SearXNG](https://search.krz.sh) — a privacy-respecting open metasearch engine
 - [Send](https://send.krz.sh) — simple, private file sharing
 
-## services i built
+## software i maintain
 
 - [1kb](https://rogue.krz.sh/1kb/#g) — ultra-small roguelike game
 - [1mb](https://rogue.krz.sh/1mb/) — extension of 1kb, showing what's possible with 1mb
-- [FlashPaper](https://paste.krz.sh) — one-time encrypted password and secret sharing
+- [gitbay](https://gitbay.org) — a CLI-first git forge, where SSH is the API
+- [hn](https://hn.krz.sh) — Hacker News proxy
+- [Office](https://office.krz.sh) — the world's smallest office suite; fork of awfice
 - [org-live](https://org.krz.sh) — a basic org-mode editor for the web
-- [Slash](https://slash.krz.sh) — bookmark and link sharing platform
+- [SkunkyArt](https://art.krz.sh) — DeviantArt alternative front-end; fork of an unmaintained upstream

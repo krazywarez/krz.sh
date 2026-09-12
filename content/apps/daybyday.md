@@ -1,7 +1,7 @@
 +++
 title = "Day by Day"
 description = "An educational iOS app that helps children learn the calendar."
-weight = 5
+weight = 4
 
 [extra]
 link = "https://gitbay.org/krz/daybyday"

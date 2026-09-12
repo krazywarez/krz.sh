@@ -19,8 +19,7 @@
     </span>
     {% if not section.extra.plain %}
     <span class="pl-links">
-      {% if page.extra.appstore %}<a class="pl-link" href="{{ page.extra.appstore }}">app store &rarr;</a>
-      {% else %}<span class="pl-link pl-link-off" aria-disabled="true">app store — soon</span>{% endif %}
+      {% if page.extra.appstore %}<a class="pl-link" href="{{ page.extra.appstore }}">app store &rarr;</a>{% endif %}
       {% if page.extra.link %}<a class="pl-link" href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }} &rarr;</a>{% endif %}
     </span>
     {% endif %}

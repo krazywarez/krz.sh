@@ -175,7 +175,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .pl-desc { color: var(--muted); }
 .pl-links { display: flex; gap: 1.1rem; font-size: 0.88rem; }
 .pl-link { color: var(--blue); }
-.pl-link-off { color: var(--dim); cursor: not-allowed; }
 
 @media (min-width: 40rem) {
   .plainlist li { flex-direction: row; align-items: baseline; gap: 1rem; }

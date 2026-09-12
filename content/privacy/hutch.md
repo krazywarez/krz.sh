@@ -4,7 +4,7 @@ description = "Privacy policy for Hutch, the Sourcehut client for iOS."
 weight = 1
 +++
 
-_last updated: 2 august 2026_
+_last updated: 12 september 2026_
 
 Hutch is a native iOS client for [Sourcehut](https://sr.ht). it talks to
 Sourcehut directly from your device. we have no user accounts, and we never
@@ -34,7 +34,7 @@ privacy policy. we are not a party to that traffic and never see it.
 ## the Hutch Stats service
 
 to render contribution graphs (the calendar-style activity charts on user
-profiles), Hutch asks a small first-party service, `hutch-stats.krz.sh`, for a
+profiles), Hutch asks a small first-party service, `hs.krz.sh`, for a
 person's public Sourcehut activity. this happens when you open a profile,
 including your own.
 
