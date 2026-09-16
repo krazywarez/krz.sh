@@ -15,7 +15,7 @@ SourceHut workflows, built for mobile.
 Hutch is a fast, native iOS app for working with [SourceHut](https://sr.ht) when
 you're away from your desk. it focuses on what matters on mobile: triaging work,
 reviewing patches, monitoring builds, following discussions, and managing
-repositories and tickets — without a browser. available now on the App Store for
+repositories and tickets, without a browser. available now on the App Store for
 iPhone.
 
 ## why it exists

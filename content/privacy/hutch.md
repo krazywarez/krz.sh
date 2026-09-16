@@ -1,5 +1,5 @@
 +++
-title = "Hutch — Privacy Policy"
+title = "Hutch Privacy Policy"
 description = "Privacy policy for Hutch, the Sourcehut client for iOS."
 weight = 1
 +++
@@ -8,8 +8,8 @@ _last updated: 12 september 2026_
 
 Hutch is a native iOS client for [Sourcehut](https://sr.ht). it talks to
 Sourcehut directly from your device. we have no user accounts, and we never
-receive your Sourcehut credentials. the one exception — a small first-party
-service used to draw contribution graphs — is described below.
+receive your Sourcehut credentials. the one exception, a small first-party
+service used to draw contribution graphs, is described below.
 
 ## what we collect
 
@@ -26,7 +26,7 @@ app stays fast and works offline. deleting the app removes all of it.
 
 ## network connections
 
-most of Hutch connects only to the Sourcehut instance you point it at — sr.ht
+most of Hutch connects only to the Sourcehut instance you point it at: sr.ht
 by default, or a self-hosted instance you configure. those requests carry your
 access token, go straight to that server, and are governed by its own terms and
 privacy policy. we are not a party to that traffic and never see it.

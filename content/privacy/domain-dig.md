@@ -1,5 +1,5 @@
 +++
-title = "Domain Dig — Privacy Policy"
+title = "Domain Dig Privacy Policy"
 description = "Privacy policy for Domain Dig, the DNS and SSL inspector for iOS."
 weight = 2
 +++
@@ -20,14 +20,14 @@ recent lookups and their results are stored locally on your device so you can
 revisit them. deleting the app removes the local copy. if you turn on iCloud
 sync (off by default), your settings, monitoring configuration, domain notes,
 and history metadata are stored in your own private iCloud account so they carry
-across your devices — that data goes to Apple's iCloud, never to us, and you can
+across your devices. that data goes to Apple's iCloud, never to us, and you can
 turn it off in Settings.
 
 ## network connections
 
 to answer a lookup, Domain Dig queries public DNS resolvers and connects to the
 hosts you inspect in order to read their certificates. it also contacts a few
-third-party lookup services to enrich the results — an IP-geolocation provider
+third-party lookup services to enrich the results: an IP-geolocation provider
 (ipapi.co), RDAP registries (via rdap.org), Certificate Transparency logs
 (crt.sh), and the HSTS preload list (hstspreload.org). the domains and IP
 addresses you look up are therefore visible to these resolvers and services, and

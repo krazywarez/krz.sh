@@ -21,9 +21,9 @@ you are not at a keyboard. universal, for iPhone and iPad.
 
 gitbay is built so the terminal is the primary interface, and nothing about it
 needs a browser. but review does not always happen at a desk. this app is for
-the parts of the work that are decisions rather than typing — reading a diff,
-answering a question, approving a merge, checking why a build went red — without
-pretending a phone is a workstation.
+the parts of the work that are decisions rather than typing: reading a diff,
+answering a question, approving a merge, checking why a build went red. it does
+that without pretending a phone is a workstation.
 
 ## what it does
 
@@ -49,7 +49,7 @@ pretending a phone is a workstation.
 ## READMEs that render properly
 
 Markdown and Org both render. Org is not converted to HTML and shown in a web
-view — it renders as native views through
+view; it renders as native views through
 [OrgSwiftUI](https://gitbay.org/krz/org-swift), so the text is selectable, it
 scales with Dynamic Type, and VoiceOver reads it. syntax highlighting inside
 source blocks follows the system light and dark appearance.
@@ -74,6 +74,6 @@ against whatever instance you run.
 ## no analytics, no ads, no SDKs
 
 the app talks to your instance and to nothing else. there are no trackers, no
-advertising, and no third-party analytics — two dependencies in total, both for
+advertising, and no third-party analytics: two dependencies in total, both for
 rendering. what you read and what you write stays between your device and your
 forge.

@@ -15,7 +15,7 @@
   <li>
     <span class="pl-main">
       <a class="pl-name" href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      {% if page.description %}<span class="pl-desc">— {{ page.description }}</span>{% endif %}
+      {% if page.description %}<span class="pl-desc">{{ page.description }}</span>{% endif %}
     </span>
     {% if not section.extra.plain %}
     <span class="pl-links">

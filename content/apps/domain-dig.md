@@ -14,7 +14,7 @@ See how any domain is really configured and served.
 
 Domain Dig is a fast, native iOS app for inspecting a domain end to end. enter a
 name and get a full report: DNS records, email-security posture, the live TLS
-certificate and chain, HTTP headers, IP geolocation, and reachable ports — no
+certificate and chain, HTTP headers, IP geolocation, and reachable ports. no
 account, no tracking, everything rendered in plain monospace.
 
 ## why it exists
@@ -37,7 +37,7 @@ certificates, and headers in a single scrollable report.
 
 ## interface
 
-everything about a domain on one report — tap through the certificate chain,
+everything about a domain on one report: tap through the certificate chain,
 email checks, and open ports.
 
 <div class="shots">
