@@ -1,0 +1,125 @@
+# Public services hosted by krz. Rendered on the home page and /services/.
+
+[[groups]]
+name = "proxies / front-ends"
+
+  [[groups.items]]
+  name = "AnonymousOverflow"
+  url = "https://ao.krz.sh"
+  description = "StackOverflow alternative front-end"
+
+  [[groups.items]]
+  name = "BiblioReads"
+  url = "https://br.krz.sh"
+  description = "Goodreads alternative front-end"
+
+  [[groups.items]]
+  name = "BreezeWiki"
+  url = "https://bw.krz.sh"
+  description = "Fandom alternative front-end"
+
+  [[groups.items]]
+  name = "Gothub"
+  url = "https://gh.krz.sh"
+  description = "alternative GitHub interface"
+
+  [[groups.items]]
+  name = "LibremDB"
+  url = "https://ld.krz.sh"
+  description = "IMDb alternative front-end"
+
+  [[groups.items]]
+  name = "Binternet"
+  url = "https://pin.krz.sh"
+  description = "Pinterest alternative front-end"
+
+  [[groups.items]]
+  name = "Piped"
+  url = "https://pipedapi.krz.sh"
+  description = "YouTube alternative front-end"
+
+  [[groups.items]]
+  name = "Small"
+  url = "https://small.krz.sh"
+  description = "Medium alternative front-end"
+
+[[groups]]
+name = "other services"
+
+  [[groups.items]]
+  name = "CyberChef"
+  url = "https://cc.krz.sh"
+  description = "the Cyber Swiss Army Knife"
+
+  [[groups.items]]
+  name = "Hat.sh"
+  url = "https://hat.krz.sh"
+  description = "simple, fast, secure client-side file encryption"
+
+  [[groups.items]]
+  name = "LibreTranslate"
+  url = "https://lt.krz.sh"
+  description = "a translation engine"
+
+  [[groups.items]]
+  name = "Mazanoke"
+  url = "https://mz.krz.sh"
+  description = "local image optimizer that runs in your browser"
+
+  [[groups.items]]
+  name = "FlashPaper"
+  url = "https://paste.krz.sh"
+  description = "one-time encrypted password and secret sharing"
+
+  [[groups.items]]
+  name = "SearXNG"
+  url = "https://search.krz.sh"
+  description = "a privacy-respecting open metasearch engine"
+
+  [[groups.items]]
+  name = "Send"
+  url = "https://send.krz.sh"
+  description = "simple, private file sharing"
+
+  [[groups.items]]
+  name = "Slash"
+  url = "https://slash.krz.sh"
+  description = "bookmark and link sharing platform; account required"
+
+[[groups]]
+name = "software i maintain"
+
+  [[groups.items]]
+  name = "1kb"
+  url = "https://rogue.krz.sh/1kb/#g"
+  description = "ultra-small roguelike game"
+
+  [[groups.items]]
+  name = "1mb"
+  url = "https://rogue.krz.sh/1mb/"
+  description = "extension of 1kb, showing what's possible with 1mb"
+
+  [[groups.items]]
+  name = "gitbay"
+  url = "https://gitbay.org"
+  description = "a CLI-first git forge, where SSH is the API"
+
+  [[groups.items]]
+  name = "hn"
+  url = "https://hn.krz.sh"
+  description = "Hacker News proxy"
+
+  [[groups.items]]
+  name = "Office"
+  url = "https://office.krz.sh"
+  description = "the world's smallest office suite; fork of awfice"
+
+  [[groups.items]]
+  name = "org-live"
+  url = "https://org.krz.sh"
+  description = "a basic org-mode editor for the web"
+
+  [[groups.items]]
+  name = "SkunkyArt"
+  url = "https://art.krz.sh"
+  description = "DeviantArt alternative front-end; fork of an unmaintained upstream"

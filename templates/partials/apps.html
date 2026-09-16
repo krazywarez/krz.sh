@@ -1,0 +1,19 @@
+<section class="dir">
+  <h2 class="dir-label">apps</h2>
+  <ul class="dir-list">
+    {% set apps = get_section(path="apps/_index.md") %}{% for page in apps.pages %}
+    <li class="dir-item dir-item-app">
+      <a class="dir-row" href="{{ page.permalink | safe }}">
+        <span class="dir-head">
+          <span class="dir-name">{{ page.title }}</span>
+        </span>
+        <span class="dir-desc">{{ page.description }}</span>
+      </a>
+      <span class="dir-actions">
+        {% if page.extra.appstore %}<a href="{{ page.extra.appstore }}">app store &rarr;</a>{% endif %}
+        {% if page.extra.link %}<a href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }} &rarr;</a>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

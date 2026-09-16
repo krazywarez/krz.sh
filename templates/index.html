@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p class="tagline">small, durable software · privacy-first tools you control</p>
+<p class="tagline">{{ config.extra.tagline | lower }}</p>
 
-<div class="hero-actions">
-  <a class="btn btn-primary" href="{{ get_url(path="/services/") | safe }}">view services &rarr;</a>
-  <a class="btn" href="{{ get_url(path="/apps/") | safe }}">browse apps</a>
-</div>
+{% include "partials/apps.html" %}
+{% include "partials/services.html" %}
 
-<article class="prose">
+<div class="home-note prose">
   {{ section.content | safe }}
-</article>
+</div>
 {% endblock content %}

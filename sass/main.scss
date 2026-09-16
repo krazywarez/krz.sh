@@ -34,7 +34,7 @@
 
 :root {
   --mono: "SF Mono", "JetBrains Mono", "Fira Code", ui-monospace, Menlo, Consolas, monospace;
-  --max: 52rem;
+  --max: 60rem;
 }
 
 * { box-sizing: border-box; }
@@ -57,6 +57,7 @@ a { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 ::selection { background: var(--sel-bg); color: var(--sel-fg); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 
 // ---- Header ----------------------------------------------------------------
 .site-header {
@@ -91,7 +92,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 // ---- Hero ------------------------------------------------------------------
 .tagline { color: var(--muted); font-size: 1rem; margin: 0 0 2rem; }
 
-.hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0 0 1rem; }
 .btn {
   display: inline-block;
   font-family: var(--mono);
@@ -105,6 +105,71 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .btn-primary { background: var(--btn-bg); color: var(--btn-fg); border-color: var(--btn-bg); }
 .btn-primary:hover { opacity: 0.88; border-color: var(--btn-bg); }
 
+// ---- Directory (home + services) -------------------------------------------
+.dir { margin: 2.5rem 0 0; }
+
+.dir-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dir-list { list-style: none; padding: 0; margin: 0; }
+.dir-grid { display: grid; grid-template-columns: 1fr; column-gap: 2rem; }
+.dir-item { border-bottom: 1px solid var(--border); }
+
+.dir-row {
+  display: block;
+  padding: 0.7rem 0.6rem;
+  margin: 0 -0.6rem;
+  color: var(--muted);
+}
+.dir-row:hover { background: var(--surface); text-decoration: none; }
+.dir-row:hover .dir-name { color: var(--blue); }
+
+.dir-head { display: flex; align-items: baseline; gap: 0.75rem; }
+.dir-name { color: var(--text); font-weight: 700; }
+.dir-host { color: var(--dim); font-size: 0.78rem; margin-left: auto; }
+.dir-desc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  margin-top: 0.1rem;
+}
+
+.dir-item-app { display: flex; flex-direction: column; align-items: flex-start; }
+.dir-item-app .dir-row { width: 100%; }
+.dir-actions {
+  display: flex;
+  gap: 1.1rem;
+  font-size: 0.84rem;
+  padding: 0 0 0.75rem;
+}
+
+@media (min-width: 44rem) {
+  .dir-item-app { flex-direction: row; align-items: center; gap: 1.5rem; }
+  .dir-item-app .dir-row { flex: 1; min-width: 0; }
+  .dir-actions { white-space: nowrap; padding: 0; }
+}
+
+@media (min-width: 48rem) {
+  .dir-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.home-note {
+  margin: 3.5rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+.home-note p { margin: 0; }
+
 // ---- Prose -----------------------------------------------------------------
 .prose { max-width: 44rem; }
 .page-label {
@@ -116,7 +181,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   margin: 0 0 1.75rem;
 }
 .prose h2 {
-  color: var(--dim);
+  color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;

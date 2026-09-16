@@ -1,0 +1,18 @@
+{% set services = load_data(path="data/services.toml") %}{% for group in services.groups %}
+<section class="dir">
+  <h2 class="dir-label">{{ group.name }}</h2>
+  <ul class="dir-list dir-grid">
+    {% for item in group.items %}
+    <li class="dir-item">
+      <a class="dir-row" href="{{ item.url }}">
+        <span class="dir-head">
+          <span class="dir-name">{{ item.name }}</span>
+          <span class="dir-host">{{ item.url | replace(from="https://", to="") }}</span>
+        </span>
+        <span class="dir-desc">{{ item.description }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
