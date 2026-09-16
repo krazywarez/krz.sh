@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p class="tagline">{{ config.extra.tagline | lower }}</p>
+<p class="tagline">{{ config.extra.tagline }}</p>
 
-{% include "partials/apps.html" %}
-{% include "partials/services.html" %}
+<section class="sec" id="apps">
+  <h2 class="sec-label">Apps</h2>
+  {% include "partials/apps.html" %}
+</section>
 
-<div class="home-note prose">
-  {{ section.content | safe }}
-</div>
+<section class="sec" id="services">
+  <h2 class="sec-label">Services</h2>
+  {% include "partials/services.html" %}
+</section>
+
+<section class="sec" id="about">
+  <h2 class="sec-label">About</h2>
+  <div class="prose">{{ section.content | safe }}</div>
+</section>
 {% endblock content %}

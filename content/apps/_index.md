@@ -2,6 +2,7 @@
 title = "Apps"
 description = "Small, durable apps and privacy-focused frontends from krz."
 sort_by = "weight"
+redirect_to = "/#apps"
 template = "section.html"
 page_template = "page.html"
 +++
