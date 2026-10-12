@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title | lower }} &middot; {{ config.title }}{% endblock title %}
+{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
+
+{% block content %}
+<h1 class="page-label">{{ section.title }}</h1>
+<div class="prose apps-intro">{{ section.content | safe }}</div>
+
+<ul class="app-cards">
+  {% for page in section.pages %}
+  <li class="app-card"{% if page.extra.tint %} style="--tint: {{ page.extra.tint }}"{% endif %}>
+    {% include "partials/app-art.html" %}
+    <div class="app-card-body">
+      {% set icon_class = "app-icon app-icon-sm" %}{% include "partials/app-icon.html" %}
+      <div class="app-id">
+        <h2 class="app-name"><a class="app-card-link" href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+        <p class="app-tagline">{{ page.extra.tagline | default(value=page.description) }}</p>
+        {% if page.extra.platforms %}<p class="app-meta">{{ page.extra.platforms | join(sep=" · ") }}</p>{% endif %}
+      </div>
+    </div>
+    <p class="app-card-actions">
+      {% if page.extra.appstore %}<a href="{{ page.extra.appstore }}">app store</a>{% endif %}
+      <span class="app-card-more" aria-hidden="true">details &rarr;</span>
+    </p>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock content %}

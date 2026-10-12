@@ -2,9 +2,8 @@
 title = "Apps"
 description = "Small, durable apps and privacy-focused frontends from krz."
 sort_by = "weight"
-redirect_to = "/#apps"
-template = "section.html"
-page_template = "page.html"
+template = "apps.html"
+page_template = "app.html"
 +++
 
 Native apps and privacy-respecting frontends. Each one is small, focused, and

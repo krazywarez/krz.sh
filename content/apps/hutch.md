@@ -8,9 +8,59 @@ link = "https://gitbay.org/krz/hutch"
 link_label = "Source"
 appstore = "https://apps.apple.com/us/app/hutch-for-sourcehut/id6760742299"
 privacy = "/privacy/hutch/"
-+++
+tagline = "SourceHut workflows, built for mobile."
+tint = "#3d5a80"
+platforms = ["iPhone"]
+# icon = "https://i.krz.sh/apps/hutch/icon.png"
+# header = "https://i.krz.sh/apps/hutch/header.jpg"
 
-SourceHut workflows, built for mobile.
+[[extra.highlights]]
+title = "Review patches"
+text = "Threaded mail with rendered diffs, replies through Apple Mail."
+
+[[extra.highlights]]
+title = "Watch builds"
+text = "Submit, monitor, retry and read logs from builds.sr.ht."
+
+[[extra.highlights]]
+title = "Triage tickets"
+text = "Assignees, labels, resolutions and comments across trackers."
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/hutch/screenshots/web/01_patch.jpg"
+alt = "Patch review"
+caption = "review patches anywhere"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/hutch/screenshots/web/02_thread.jpg"
+alt = "Threaded inbox"
+caption = "stay on top of discussions"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/hutch/screenshots/web/03_builds.jpg"
+alt = "Builds"
+caption = "monitor builds in real time"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/hutch/screenshots/web/04_tickets.jpg"
+alt = "Tickets"
+caption = "manage issues on the go"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/hutch/screenshots/web/05_repo.jpg"
+alt = "Repository diff"
+caption = "explore your code"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/hutch/screenshots/web/06_projects.jpg"
+alt = "Projects"
+caption = "everything in one place"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/hutch/screenshots/web/07_actions.jpg"
+alt = "Build submission"
+caption = "take action instantly"
++++
 
 Hutch is a fast, native iOS app for working with [SourceHut](https://sr.ht) when
 you're away from your desk. it focuses on what matters on mobile: triaging work,
@@ -33,21 +83,6 @@ and manage work across the SourceHut ecosystem.
 - submit, monitor, retry, and inspect builds and logs
 - follow projects linking repositories, trackers, and lists
 - manage profile settings, SSH keys, PGP keys, and access tokens
-
-## interface
-
-from patch review to trackers, builds, and repositories, Hutch is built to make
-SourceHut feel at home on iOS.
-
-<div class="shots">
-<figure><img loading="lazy" width="640" height="1387" src="https://i.krz.sh/apps/hutch/screenshots/web/01_patch.jpg" alt="Patch review"><figcaption>review patches anywhere</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1387" src="https://i.krz.sh/apps/hutch/screenshots/web/02_thread.jpg" alt="Threaded inbox"><figcaption>stay on top of discussions</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1387" src="https://i.krz.sh/apps/hutch/screenshots/web/03_builds.jpg" alt="Builds"><figcaption>monitor builds in real time</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1387" src="https://i.krz.sh/apps/hutch/screenshots/web/04_tickets.jpg" alt="Tickets"><figcaption>manage issues on the go</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1387" src="https://i.krz.sh/apps/hutch/screenshots/web/05_repo.jpg" alt="Repository diff"><figcaption>explore your code</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1387" src="https://i.krz.sh/apps/hutch/screenshots/web/06_projects.jpg" alt="Projects"><figcaption>everything in one place</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1387" src="https://i.krz.sh/apps/hutch/screenshots/web/07_actions.jpg" alt="Build submission"><figcaption>take action instantly</figcaption></figure>
-</div>
 
 ## major features
 

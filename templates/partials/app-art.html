@@ -1,0 +1,12 @@
+{# Header image when supplied, otherwise up to three screenshots fanned over the tint. #}
+<div class="{{ art_class | default(value="app-art") }}{% if not page.extra.header %} app-art-composed{% endif %}">
+  {% if page.extra.header %}
+  <img src="{{ page.extra.header }}" alt="">
+  {% elif page.extra.screenshots %}
+  {% for s in page.extra.screenshots %}{% if loop.index <= 3 %}
+  <img class="fan fan-{{ loop.index }}" src="{{ s.src }}" alt="" loading="lazy">
+  {% endif %}{% endfor %}
+  {% else %}
+  <span class="app-art-mark" aria-hidden="true">{{ page.title }}</span>
+  {% endif %}
+</div>

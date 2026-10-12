@@ -1,0 +1,5 @@
+{% if page.extra.icon %}
+<img class="{{ icon_class | default(value="app-icon") }}" src="{{ page.extra.icon }}" alt="" width="1024" height="1024">
+{% else %}
+<span class="{{ icon_class | default(value="app-icon") }} app-icon-mono" aria-hidden="true">{{ page.title | truncate(length=1, end="") | upper }}</span>
+{% endif %}
