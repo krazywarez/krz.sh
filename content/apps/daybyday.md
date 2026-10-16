@@ -24,6 +24,26 @@ text = "Large targets and a calm, simple interface."
 [[extra.highlights]]
 title = "No data collected"
 text = "No ads, no accounts, nothing leaves the device."
+
+[[extra.screenshots]]
+src = "/apps/daybyday/screenshots/01-home.jpg"
+alt = "Home"
+caption = "pick a topic"
+
+[[extra.screenshots]]
+src = "/apps/daybyday/screenshots/02-today.jpg"
+alt = "Today"
+caption = "today's day, date, month and season"
+
+[[extra.screenshots]]
+src = "/apps/daybyday/screenshots/03-colors.jpg"
+alt = "Colors"
+caption = "learn colors"
+
+[[extra.screenshots]]
+src = "/apps/daybyday/screenshots/04-shapes.jpg"
+alt = "Shapes"
+caption = "learn shapes"
 +++
 
 Day by Day is a gentle, ad-free iOS app that helps children learn days, weeks,
