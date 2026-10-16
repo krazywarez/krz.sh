@@ -10,7 +10,7 @@ appstore = "https://apps.apple.com/us/app/daybyday-learn/id6760321939"
 privacy = "/privacy/daybyday/"
 tint = "#c2410c"
 platforms = ["iPhone"]
-icon = "/apps/daybyday/icon.png"
+icon = "https://i.krz.sh/apps/daybyday/icon.png"
 # header = "https://i.krz.sh/apps/daybyday/header.jpg"
 
 [[extra.highlights]]
@@ -26,22 +26,22 @@ title = "No data collected"
 text = "No ads, no accounts, nothing leaves the device."
 
 [[extra.screenshots]]
-src = "/apps/daybyday/screenshots/01-home.jpg"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/01-home.jpg"
 alt = "Home"
 caption = "pick a topic"
 
 [[extra.screenshots]]
-src = "/apps/daybyday/screenshots/02-today.jpg"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/02-today.jpg"
 alt = "Today"
 caption = "today's day, date, month and season"
 
 [[extra.screenshots]]
-src = "/apps/daybyday/screenshots/03-colors.jpg"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/03-colors.jpg"
 alt = "Colors"
 caption = "learn colors"
 
 [[extra.screenshots]]
-src = "/apps/daybyday/screenshots/04-shapes.jpg"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/04-shapes.jpg"
 alt = "Shapes"
 caption = "learn shapes"
 +++

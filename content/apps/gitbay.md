@@ -11,7 +11,7 @@ appstore = "https://apps.apple.com/us/app/gitbay/id6806399095"
 tagline = "Your forge, from the couch."
 tint = "#4338ca"
 platforms = ["iPhone", "iPad"]
-icon = "/apps/gitbay/icon.png"
+icon = "https://i.krz.sh/apps/gitbay/icon.png"
 # header = "https://i.krz.sh/apps/gitbay/header.jpg"
 
 [[extra.highlights]]

@@ -11,7 +11,7 @@ privacy = "/privacy/hutch/"
 tagline = "SourceHut workflows, built for mobile."
 tint = "#3d5a80"
 platforms = ["iPhone"]
-icon = "/apps/hutch/icon.png"
+icon = "https://i.krz.sh/apps/hutch/icon.png"
 # header = "https://i.krz.sh/apps/hutch/header.jpg"
 
 [[extra.highlights]]

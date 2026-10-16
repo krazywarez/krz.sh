@@ -11,7 +11,7 @@ privacy = "/privacy/orgstar/"
 tagline = "Your org files, wherever you are."
 tint = "#5b7a2e"
 platforms = ["Mac", "iPhone", "iPad"]
-icon = "/apps/orgstar/icon.png"
+icon = "https://i.krz.sh/apps/orgstar/icon.png"
 # header = "https://i.krz.sh/apps/orgstar/header.jpg"
 
 [[extra.highlights]]
