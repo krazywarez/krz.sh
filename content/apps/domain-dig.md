@@ -11,7 +11,7 @@ privacy = "/privacy/domain-dig/"
 tagline = "See how any domain is really configured and served."
 tint = "#0f766e"
 platforms = ["iPhone"]
-# icon = "https://i.krz.sh/apps/domain-dig/icon.png"
+icon = "/apps/domain-dig/icon.png"
 # header = "https://i.krz.sh/apps/domain-dig/header.jpg"
 
 [[extra.highlights]]

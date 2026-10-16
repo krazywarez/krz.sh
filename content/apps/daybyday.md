@@ -10,7 +10,7 @@ appstore = "https://apps.apple.com/us/app/daybyday-learn/id6760321939"
 privacy = "/privacy/daybyday/"
 tint = "#c2410c"
 platforms = ["iPhone"]
-# icon = "https://i.krz.sh/apps/daybyday/icon.png"
+icon = "/apps/daybyday/icon.png"
 # header = "https://i.krz.sh/apps/daybyday/header.jpg"
 
 [[extra.highlights]]
