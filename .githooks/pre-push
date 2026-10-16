@@ -23,6 +23,9 @@ echo "pre-push: building site with zola..."
 zola build
 
 echo "pre-push: deploying to ${remote_host}:${remote_path}..."
+# Upload assets before HTML so a page never references a cachebust URL
+# whose file is still the old version; Cloudflare would cache it for a year.
+rsync -az --exclude '*.html' public/ "${remote_host}:${remote_path}/"
 rsync -az --delete public/ "${remote_host}:${remote_path}/"
 
 echo "pre-push: deploy complete."
