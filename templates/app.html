@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title | lower }} &middot; {{ config.title }}{% endblock title %}
+{% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
+
+{% block content %}
+<p class="back"><a href="{{ get_url(path="@/apps/_index.md") | safe }}">&larr; all apps</a></p>
+<article class="app"{% if page.extra.tint %} style="--tint: {{ page.extra.tint }}"{% endif %}>
+  {% set art_class = "app-art app-hero" %}{% include "partials/app-art.html" %}
+
+  <header class="app-head">
+    {% include "partials/app-icon.html" %}
+    <div class="app-id">
+      <h1 class="app-name">{{ page.title }}</h1>
+      <p class="app-tagline">{{ page.extra.tagline | default(value=page.description) }}</p>
+      {% if page.extra.platforms %}<p class="app-meta">{{ page.extra.platforms | join(sep=" · ") }}</p>{% endif %}
+    </div>
+    <div class="app-cta">
+      {% include "partials/app-store.html" %}
+      {% if page.extra.link %}<a class="btn" href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }} &rarr;</a>{% endif %}
+    </div>
+  </header>
+
+  {% if page.extra.highlights %}
+  <ul class="app-highlights">
+    {% for h in page.extra.highlights %}
+    <li><h2>{{ h.title }}</h2><p>{{ h.text }}</p></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.extra.screenshots %}
+  <div class="shots" tabindex="0" aria-label="Screenshots">
+    {% for s in page.extra.screenshots %}
+    <figure><img loading="lazy" src="{{ s.src }}" alt="{{ s.alt }}"><figcaption>{{ s.caption }}</figcaption></figure>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="prose app-body">
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+    {{ page.content | safe }}
+  </div>
+
+  <p class="app-foot">
+    {% if page.extra.appstore %}<a href="{{ page.extra.appstore }}">app store</a>{% endif %}
+    {% if page.extra.link %}<a href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }}</a>{% endif %}
+    {% if page.extra.privacy %}
+    {% if "://" in page.extra.privacy %}{% set privacy_url = page.extra.privacy %}{% else %}{% set privacy_url = get_url(path=page.extra.privacy) %}{% endif %}
+    <a href="{{ privacy_url | safe }}">privacy policy</a>
+    {% endif %}
+  </p>
+</article>
+{% endblock content %}

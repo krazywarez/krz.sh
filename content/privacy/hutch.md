@@ -2,6 +2,9 @@
 title = "Hutch Privacy Policy"
 description = "Privacy policy for Hutch, the Sourcehut client for iOS."
 weight = 1
+
+[extra]
+app = "apps/hutch.md"
 +++
 
 _last updated: 12 september 2026_

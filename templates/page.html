@@ -4,26 +4,18 @@
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
 {% block content %}
-{% set parent_path = page.ancestors | last %}
-{% if parent_path == "apps/_index.md" %}
-<p class="back"><a href="/#apps">&larr; all apps</a></p>
-{% else %}
 {% set parent = get_section(path=page.ancestors | last, metadata_only=true) %}
 <p class="back"><a href="{{ parent.permalink | safe }}">&larr; back</a></p>
+{% if page.extra.app %}{% set icon_page = get_page(path=page.extra.app) %}
+<a class="app-ref"{% if icon_page.extra.tint %} style="--tint: {{ icon_page.extra.tint }}"{% endif %} href="{{ icon_page.permalink | safe }}">
+  {% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}
+  <span class="app-ref-name">{{ icon_page.title }}</span>
+  <span class="app-ref-desc">{{ icon_page.extra.tagline | default(value=icon_page.description) }}</span>
+</a>
 {% endif %}
 <article class="prose">
   <h1 class="page-label">{{ page.title }}</h1>
   {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
   {{ page.content | safe }}
-  {% if page.extra.appstore or page.extra.link %}
-  <p class="app-actions">
-    {% if page.extra.appstore %}<a class="btn btn-primary" href="{{ page.extra.appstore }}">app store &rarr;</a>{% endif %}
-    {% if page.extra.link %}<a class="btn" href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }} &rarr;</a>{% endif %}
-  </p>
-  {% endif %}
-  {% if page.extra.privacy %}
-  {% if "://" in page.extra.privacy %}{% set privacy_url = page.extra.privacy %}{% else %}{% set privacy_url = get_url(path=page.extra.privacy) %}{% endif %}
-  <p class="privacy-link"><a href="{{ privacy_url | safe }}">privacy policy &rarr;</a></p>
-  {% endif %}
 </article>
 {% endblock content %}

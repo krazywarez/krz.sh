@@ -1,5 +1,7 @@
 +++
 title = "Services"
 description = "Public self-hosted services from krz."
-redirect_to = "/#services"
+template = "services.html"
 +++
+
+Public front-ends and tools, self-hosted by krz.

@@ -1,15 +1,14 @@
 {% set apps = get_section(path="apps/_index.md") %}
-<ul class="dir">
+<ul class="app-rows">
   {% for page in apps.pages %}
-  <li class="dir-item dir-item-app">
-    <a class="dir-row" href="{{ page.permalink | safe }}">
-      <span class="dir-name">{{ page.title }}</span>
-      <span class="dir-desc">{{ page.description }}</span>
+  <li{% if page.extra.tint %} style="--tint: {{ page.extra.tint }}"{% endif %}>
+    <a class="app-row" href="{{ page.permalink | safe }}">
+      {% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}
+      <span class="app-row-name">{{ page.title }}</span>
+      <span class="app-row-desc">{{ page.extra.tagline | default(value=page.description) }}</span>
+      <span class="app-row-go" aria-hidden="true">&rarr;</span>
     </a>
-    <span class="dir-actions">
-      {% if page.extra.appstore %}<a href="{{ page.extra.appstore }}">app store</a>{% endif %}
-      {% if page.extra.link %}<a href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }}</a>{% endif %}
-    </span>
   </li>
   {% endfor %}
 </ul>
+<p class="dir-more"><a href="{{ apps.permalink | safe }}">all apps &rarr;</a></p>

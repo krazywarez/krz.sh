@@ -8,9 +8,59 @@ link = "https://gitbay.org/krz/domain-dig"
 link_label = "Source"
 appstore = "https://apps.apple.com/us/app/domaindig/id6760368004"
 privacy = "/privacy/domain-dig/"
-+++
+tagline = "See how any domain is really configured and served."
+tint = "#0f766e"
+platforms = ["iPhone"]
+icon = "https://i.krz.sh/apps/domaindig/icon.png"
+header = "https://i.krz.sh/apps/domaindig/hero.jpg"
 
-See how any domain is really configured and served.
+[[extra.highlights]]
+title = "Every record"
+text = "A to PTR, DNSSEC, reachability and the redirect chain."
+
+[[extra.highlights]]
+title = "Email security"
+text = "SPF, DMARC, DKIM, MTA-STS and BIMI in one check."
+
+[[extra.highlights]]
+title = "TLS, end to end"
+text = "Certificate, SANs, cipher and the full chain."
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/domaindig/screenshots/web/01.jpg"
+alt = "Lookup and DNS records"
+caption = "run a lookup, see everything"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/domaindig/screenshots/web/02.jpg"
+alt = "Record types and email security"
+caption = "every record type and email check"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/domaindig/screenshots/web/03.jpg"
+alt = "SSL certificate and chain"
+caption = "full TLS certificate and chain"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/domaindig/screenshots/web/04.jpg"
+alt = "IP location and open ports"
+caption = "IP geolocation and open ports"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/domaindig/screenshots/web/05.jpg"
+alt = "Saved domains"
+caption = "save the domains you watch"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/domaindig/screenshots/web/06.jpg"
+alt = "Lookup history"
+caption = "history, kept on device"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/domaindig/screenshots/web/07.jpg"
+alt = "Resolver settings"
+caption = "choose your DNS resolver"
++++
 
 Domain Dig is a fast, native iOS app for inspecting a domain end to end. enter a
 name and get a full report: DNS records, email-security posture, the live TLS
@@ -34,21 +84,6 @@ certificates, and headers in a single scrollable report.
 - geolocate the resolved IP and scan common ports
 - look up registration and ownership via RDAP
 - monitor domains and get alerts via webhook or Slack
-
-## interface
-
-everything about a domain on one report: tap through the certificate chain,
-email checks, and open ports.
-
-<div class="shots">
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/01.jpg" alt="Lookup and DNS records"><figcaption>run a lookup, see everything</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/02.jpg" alt="Record types and email security"><figcaption>every record type and email check</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/03.jpg" alt="SSL certificate and chain"><figcaption>full TLS certificate and chain</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/04.jpg" alt="IP location and open ports"><figcaption>IP geolocation and open ports</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/05.jpg" alt="Saved domains"><figcaption>save the domains you watch</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/06.jpg" alt="Lookup history"><figcaption>history, kept on device</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/domaindig/screenshots/web/07.jpg" alt="Resolver settings"><figcaption>choose your DNS resolver</figcaption></figure>
-</div>
 
 ## details that matter
 

@@ -102,12 +102,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .tagline {
-  font-size: 28px;
-  line-height: 1.25;
-  letter-spacing: -0.025em;
-  font-weight: 500;
-  max-width: 19ch;
-  margin: 0 0 72px;
+  font-size: clamp(34px, 5.2vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+  max-width: 17ch;
+  margin: 8px 0 80px;
+  text-wrap: balance;
 }
 
 // ---- Numbered sections -----------------------------------------------------
@@ -135,55 +136,58 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--dim);
-  margin: 32px 0 2px;
+  margin: 32px 0 10px;
 }
-.dir-group:first-of-type .sec-sub { margin-top: 20px; }
+.svc-group:first-of-type .sec-sub { margin-top: 20px; }
 
-// ---- Directory rows --------------------------------------------------------
-// The name column is fixed so names align down the page; long descriptions
-// wrap inside their own cell rather than pushing the grid out of true.
-.dir { list-style: none; margin: 0; padding: 0; }
-.dir-grid { display: grid; grid-template-columns: 1fr; column-gap: 48px; }
-.dir-item { border-bottom: 1px solid var(--line); }
-
-.dir-row {
+// ---- Home: app rows -------------------------------------------------------
+.app-rows { list-style: none; margin: 0; padding: 0; }
+.app-rows li { border-bottom: 1px solid var(--line); }
+.app-row {
   display: grid;
-  grid-template-columns: 150px 1fr auto;
-  align-items: baseline;
+  grid-template-columns: 44px 160px 1fr auto;
+  align-items: center;
   gap: 4px 20px;
-  padding: 11px 8px 11px 0;
+  padding: 12px 0;
 }
-.dir-name { font-weight: 600; letter-spacing: -0.01em; }
-.dir-desc { color: var(--mut); font-size: 14px; }
-.dir-host { font-family: var(--mono); font-size: 11.5px; color: var(--dim); }
-.dir-item:hover { background: var(--hov); }
-.dir-item:hover .dir-name { color: var(--ac); }
+.app-row-name { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
+.app-row-desc { color: var(--mut); }
+.app-row-go { color: var(--dim); }
+.app-row:hover .app-row-name, .app-row:hover .app-row-go { color: var(--ac); }
+@media (prefers-reduced-motion: no-preference) {
+  .app-row-go { transition: transform 0.2s; }
+  .app-row:hover .app-row-go { transform: translateX(4px); }
+}
 
-.dir-item-app { display: flex; align-items: baseline; gap: 24px; }
-.dir-item-app .dir-row { flex: 1; grid-template-columns: 150px 1fr; min-width: 0; }
-.dir-actions {
+// ---- Services: cards -------------------------------------------------------
+.svc-group + .svc-group { margin-top: 8px; }
+.svc-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 0 32px;
+}
+.svc-card {
   display: flex;
-  gap: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
+  flex-direction: column;
+  height: 100%;
+  padding: 14px 0 16px;
+  border-top: 1px solid var(--line);
 }
-.dir-actions a { color: var(--ac); }
-.dir-actions a:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-@media (min-width: 1000px) {
-  .dir-grid { grid-template-columns: 1fr 1fr; }
-}
+.svc-name { font-size: 16px; font-weight: 700; letter-spacing: -0.015em; }
+.svc-desc { color: var(--mut); font-size: 14px; margin: 2px 0 10px; }
+.svc-host { margin-top: auto; font-family: var(--mono); font-size: 11.5px; color: var(--dim); }
+.svc-card:hover { border-top-color: var(--ac); }
+.svc-card:hover .svc-name, .svc-card:hover .svc-host { color: var(--ac); }
 
 @media (max-width: 760px) {
   :root { --gut: 20px; }
-  .tagline { font-size: 22px; max-width: none; margin-bottom: 48px; }
-  .dir-row { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; }
-  .dir-item-app { display: block; }
-  .dir-item-app .dir-row { grid-template-columns: 1fr; }
-  .dir-actions { padding: 0 0 12px; }
+  .app-row { grid-template-columns: 44px 1fr auto; gap: 0 14px; }
+  .app-row .app-icon { grid-row: span 2; }
+  .app-row-go { grid-row: span 2; grid-column: 3; }
+  .app-row-desc { grid-column: 2; font-size: 14px; line-height: 1.35; }
 }
 
 // ---- Prose (app detail, privacy, home about) -------------------------------
@@ -198,6 +202,7 @@ a { color: inherit; text-decoration: none; }
   width: 8px; height: 1px; background: var(--ac);
 }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+.prose pre { overflow-x: auto; }
 
 .page-label {
   font-size: 11px;
@@ -231,8 +236,7 @@ a { color: inherit; text-decoration: none; }
 .back a { color: var(--mut); }
 .back a:hover { color: var(--ac); }
 
-// ---- App page: actions + screenshots ---------------------------------------
-.app-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 32px 0 8px; }
+// ---- Buttons ---------------------------------------------------------------
 .btn {
   display: inline-block;
   font-family: var(--sans);
@@ -245,31 +249,276 @@ a { color: inherit; text-decoration: none; }
   color: var(--fg);
 }
 .btn:hover { border-color: var(--fg); }
-.btn-primary { background: var(--ac); border-color: var(--ac); color: #fff; }
-.btn-primary:hover { opacity: 0.88; border-color: var(--ac); }
-.prose a.btn { color: var(--fg); text-decoration: none; }
-.prose a.btn-primary { color: #fff; }
-.privacy-link { font-size: 13px; margin: 12px 0 0; }
+
+// Black-on-light / white-on-dark, after Apple's badge proportions.
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 16px 0 12px;
+  border-radius: 9px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.btn-store svg { width: 20px; height: 24px; flex: none; }
+.btn-store small { display: block; font-size: 10px; font-weight: 500; letter-spacing: 0; margin-bottom: 2px; }
+.btn-store:hover { opacity: 0.85; }
+
+// ---- App: shared pieces ----------------------------------------------------
+// --tint is per app (front matter). It only colors art and fallback icons;
+// text keeps the site tokens so contrast holds.
+.app, .app-card { --tint: var(--fg); }
+
+.app-icon {
+  flex: none;
+  display: block;
+  width: 112px;
+  height: 112px;
+  border-radius: 22.5%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.06), 0 8px 24px -8px rgb(0 0 0 / 0.35);
+  background: var(--bg);
+}
+.app-icon-sm { width: 64px; height: 64px; }
+.app-icon-xs { width: 44px; height: 44px; }
+.app-icon-mono {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.48em;
+  letter-spacing: -0.04em;
+  background: linear-gradient(150deg, color-mix(in srgb, var(--tint) 70%, #fff), var(--tint) 60%);
+}
+.app-icon.app-icon-mono { font-size: 62px; }
+.app-icon-sm.app-icon-mono { font-size: 36px; }
+.app-icon-xs.app-icon-mono { font-size: 24px; }
+
+.app-art {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 12 / 5;
+  background: var(--tint);
+}
+.app-art > img:only-child { width: 100%; height: 100%; object-fit: cover; display: block; }
+.app-art-composed {
+  background:
+    radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--tint) 55%, #fff) 0%, transparent 60%),
+    linear-gradient(160deg, var(--tint), color-mix(in srgb, var(--tint) 60%, #000));
+}
+// Sized by height so each screenshot's top (where marketing shots carry
+// their headline) stays in frame; the bottom runs off the edge.
+.app-art .fan {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  height: 120%;
+  width: auto;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px -12px rgb(0 0 0 / 0.5), 0 0 0 1px rgb(255 255 255 / 0.12);
+}
+.app-art .fan-1 { transform: translateX(-50%); z-index: 2; top: 12%; }
+.app-art .fan-2 { transform: translateX(-112%) rotate(-6deg); }
+.app-art .fan-3 { transform: translateX(12%) rotate(6deg); }
+.app-art-mark {
+  position: absolute;
+  inset: auto 0 -0.18em 0.04em;
+  color: rgb(255 255 255 / 0.16);
+  font-size: clamp(64px, 14vw, 180px);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.app-id { min-width: 0; }
+.app-name { font-size: 32px; font-weight: 700; letter-spacing: -0.035em; line-height: 1.1; margin: 0; }
+.app-tagline { font-size: 17px; line-height: 1.35; color: var(--mut); margin: 6px 0 0; letter-spacing: -0.01em; }
+.app-meta {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--dim);
+  margin: 10px 0 0;
+}
+
+// ---- App: detail page ------------------------------------------------------
+.app-hero { aspect-ratio: 12 / 4.2; }
+
+.app-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  padding: 20px 0 28px;
+  border-bottom: 2px solid var(--fg);
+}
+.app-head .app-icon {
+  margin: -76px 0 0 28px;
+  position: relative;
+  box-shadow: 0 0 0 4px var(--bg), 0 12px 32px -10px rgb(0 0 0 / 0.45);
+}
+.app-head .app-id { flex: 1; padding-bottom: 2px; }
+.app-cta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+.app-highlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+.app-highlights li { padding: 22px 24px 24px 0; }
+.app-highlights li + li { padding-left: 24px; border-left: 1px solid var(--line); }
+.app-highlights h2 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 4px;
+  padding-top: 12px;
+  border-top: 2px solid var(--ac);
+  display: inline-block;
+}
+.app-highlights p { margin: 0; color: var(--mut); font-size: 14px; }
 
 .shots {
   display: flex;
-  gap: 14px;
+  gap: 20px;
   overflow-x: auto;
-  margin: 20px 0 8px;
-  padding-bottom: 12px;
+  margin: 0 calc(var(--gut) * -1);
+  padding: 32px var(--gut) 20px;
   scroll-snap-type: x mandatory;
+  scroll-padding: 0 var(--gut);
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
-.shots figure { flex: 0 0 auto; width: 176px; margin: 0; scroll-snap-align: start; }
-.shots img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
-.shots figcaption { color: var(--dim); font-size: 12px; margin-top: 8px; line-height: 1.4; }
+.shots figure { flex: 0 0 auto; width: 220px; margin: 0; scroll-snap-align: start; }
+.shots img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 640 / 1390;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 0 0 1px var(--line), 0 16px 32px -20px rgb(0 0 0 / 0.5);
+  background: var(--hov);
+}
+.shots figcaption { color: var(--mut); font-size: 13px; margin-top: 12px; line-height: 1.4; }
+
+.app-body { margin-top: 24px; }
+.app-foot {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 48px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.app-foot a { color: var(--ac); }
+.app-foot a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+// ---- App: index cards ------------------------------------------------------
+.apps-intro { margin-bottom: 32px; }
+.app-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+  gap: 40px 32px;
+}
+.app-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--line);
+}
+.app-card .app-art { aspect-ratio: 16 / 9; }
+.app-card-body { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0 0; }
+.app-card .app-name { font-size: 22px; }
+.app-card .app-tagline { font-size: 15px; margin-top: 2px; }
+.app-card .app-meta { margin-top: 8px; }
+.app-card-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.app-card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 0;
+  padding: 12px 0 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mut);
+}
+.app-card-actions a { position: relative; z-index: 2; color: var(--ac); }
+.app-card-actions a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.app-card .app-art .fan { transition: transform 0.4s cubic-bezier(.2,.8,.2,1); }
+.app-card:hover .app-name { color: var(--ac); }
+.app-card-more { margin-left: auto; }
+.app-card:hover .app-card-more { color: var(--ac); }
+@media (prefers-reduced-motion: no-preference) {
+  .app-card:hover .fan-1 { transform: translateX(-50%) translateY(-4%); }
+  .app-card:hover .fan-2 { transform: translateX(-122%) rotate(-9deg); }
+  .app-card:hover .fan-3 { transform: translateX(22%) rotate(9deg); }
+}
+
+.dir-more { margin: 14px 0 0; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+.dir-more a { color: var(--ac); }
+.dir-more a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 760px) {
+  .app-hero { aspect-ratio: 4 / 3; margin: 0 calc(var(--gut) * -1); }
+  .app-head { flex-wrap: wrap; align-items: flex-start; gap: 16px; }
+  .app-head .app-icon { width: 96px; height: 96px; margin: -64px 0 0 0; }
+  .app-head .app-icon-mono { font-size: 54px; }
+  .app-head .app-id { flex-basis: 100%; }
+  .app-name { font-size: 28px; }
+  .app-highlights li, .app-highlights li + li { padding: 18px 0; border-left: 0; }
+  .app-highlights li + li { border-top: 1px solid var(--line); }
+  .shots figure { width: 62vw; }
+}
 
 // ---- Plain list (privacy index) --------------------------------------------
 .plainlist { list-style: none; padding: 0; margin: 20px 0 0; }
-.plainlist li { padding: 11px 0; border-bottom: 1px solid var(--line); }
+.plainlist li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
 .plainlist li:last-child { border-bottom: 0; }
-.pl-name { font-weight: 600; }
+.pl-name { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
+.pl-name::after { content: ""; position: absolute; inset: 0; }
+.plainlist li:hover .pl-name { color: var(--ac); }
 .pl-desc { display: block; color: var(--mut); font-size: 14px; }
+
+// ---- App reference strip (privacy policy pages) -----------------------------
+.app-ref {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: center;
+  gap: 0 14px;
+  max-width: 64ch;
+  margin: 0 0 32px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--tint, var(--ac));
+  background: var(--hov);
+}
+.app-ref .app-icon { grid-row: span 2; }
+.app-ref-name { font-weight: 700; letter-spacing: -0.015em; }
+.app-ref-desc { color: var(--mut); font-size: 14px; }
+.app-ref:hover .app-ref-name { color: var(--ac); }
 
 // ---- Footer ----------------------------------------------------------------
 .site-footer {

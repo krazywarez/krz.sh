@@ -8,9 +8,49 @@ link = "https://gitbay.org/krz/gitbay-ios"
 link_label = "Source"
 privacy = "https://gitbay.org/privacy"
 appstore = "https://apps.apple.com/us/app/gitbay/id6806399095"
-+++
+tagline = "Your forge, from the couch."
+tint = "#4338ca"
+platforms = ["iPhone", "iPad"]
+icon = "https://i.krz.sh/apps/gitbay/icon.png"
+header = "https://i.krz.sh/apps/gitbay/hero.jpg"
 
-your forge, from the couch.
+[[extra.highlights]]
+title = "Review and merge"
+text = "Unified diffs, inline comments and approvals."
+
+[[extra.highlights]]
+title = "Watch builds"
+text = "Pick a job and read the logs when a build goes red."
+
+[[extra.highlights]]
+title = "No passwords"
+text = "A scoped token minted over SSH, kept in the keychain."
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/gitbay/screenshots/web/01_dashboard.jpg"
+alt = "Dashboard"
+caption = "what is waiting on you"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/gitbay/screenshots/web/02_repo.jpg"
+alt = "Repository"
+caption = "every repository surface in one list"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/gitbay/screenshots/web/03_mr_list.jpg"
+alt = "Merge requests"
+caption = "merge requests, open through merged"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/gitbay/screenshots/web/04_mr_detail.jpg"
+alt = "Merge request detail"
+caption = "description, checks, reviews, commits"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/gitbay/screenshots/web/05_diff.jpg"
+alt = "Unified diff"
+caption = "read the diff, then decide"
++++
 
 gitbay is a native iOS app for [gitbay](https://gitbay.org), a CLI-first git
 forge where SSH is the API and the command line is the product. the app is the
@@ -35,16 +75,6 @@ that without pretending a phone is a workstation.
 - watch builds, pick a job, read the logs
 - read releases and the wiki
 - explore repositories, follow activity, and read profiles
-
-## interface
-
-<div class="shots">
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/01_dashboard.jpg" alt="Dashboard"><figcaption>what is waiting on you</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/02_repo.jpg" alt="Repository"><figcaption>every repository surface in one list</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/03_mr_list.jpg" alt="Merge requests"><figcaption>merge requests, open through merged</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/04_mr_detail.jpg" alt="Merge request detail"><figcaption>description, checks, reviews, commits</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1390" src="https://i.krz.sh/apps/gitbay/screenshots/web/05_diff.jpg" alt="Unified diff"><figcaption>read the diff, then decide</figcaption></figure>
-</div>
 
 ## READMEs that render properly
 

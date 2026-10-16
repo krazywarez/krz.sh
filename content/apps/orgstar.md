@@ -6,10 +6,56 @@ weight = 4
 [extra]
 link = "https://gitbay.org/krz/orgstar"
 link_label = "Source"
+appstore = "https://apps.apple.com/us/app/orgstar-org-mode-agenda/id6821552018"
 privacy = "/privacy/orgstar/"
-+++
+tagline = "Your org files, wherever you are."
+tint = "#5b7a2e"
+platforms = ["Mac", "iPhone", "iPad"]
+icon = "https://i.krz.sh/apps/orgstar/icon.png"
+header = "https://i.krz.sh/apps/orgstar/hero.jpg"
 
-your org files, wherever you are.
+[[extra.highlights]]
+title = "Plain text"
+text = "Reads and writes the same files Emacs does, byte for byte."
+
+[[extra.highlights]]
+title = "Agenda"
+text = "Scheduled items, deadlines, habits and calendar events."
+
+[[extra.highlights]]
+title = "Capture anywhere"
+text = "Templates from the app, share sheet, Shortcuts and widgets."
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/orgstar/screenshots/web/01-agenda.jpg"
+alt = "Agenda"
+caption = "the agenda across your files"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/orgstar/screenshots/web/02-reader.jpg"
+alt = "Reader"
+caption = "read with folding"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/orgstar/screenshots/web/03-editor.jpg"
+alt = "Editor"
+caption = "edit with Org's commands"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/orgstar/screenshots/web/04-tables.jpg"
+alt = "Tables"
+caption = "tables and formulas"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/orgstar/screenshots/web/05-capture.jpg"
+alt = "Capture"
+caption = "capture with templates"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/orgstar/screenshots/web/06-search.jpg"
+alt = "Search"
+caption = "search everything"
++++
 
 orgstar is a native editor for [Org mode](https://orgmode.org) files on the Mac,
 with an app for iPhone and iPad. it reads and writes the same plain-text files
@@ -36,17 +82,6 @@ agenda, rebuilt from the files whenever they change.
 - compute table formulas and tangle source blocks into files
 - export to HTML and Markdown
 - search across file names, headings and text
-
-## interface
-
-<div class="shots">
-<figure><img loading="lazy" width="640" height="1391" src="https://i.krz.sh/apps/orgstar/screenshots/web/01-agenda.jpg" alt="Agenda"><figcaption>the agenda across your files</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1391" src="https://i.krz.sh/apps/orgstar/screenshots/web/02-reader.jpg" alt="Reader"><figcaption>read with folding</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1391" src="https://i.krz.sh/apps/orgstar/screenshots/web/03-editor.jpg" alt="Editor"><figcaption>edit with Org's commands</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1391" src="https://i.krz.sh/apps/orgstar/screenshots/web/04-tables.jpg" alt="Tables"><figcaption>tables and formulas</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1391" src="https://i.krz.sh/apps/orgstar/screenshots/web/05-capture.jpg" alt="Capture"><figcaption>capture with templates</figcaption></figure>
-<figure><img loading="lazy" width="640" height="1391" src="https://i.krz.sh/apps/orgstar/screenshots/web/06-search.jpg" alt="Search"><figcaption>search everything</figcaption></figure>
-</div>
 
 ## on the Mac
 
