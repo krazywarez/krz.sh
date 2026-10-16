@@ -12,7 +12,7 @@ tagline = "Your org files, wherever you are."
 tint = "#5b7a2e"
 platforms = ["Mac", "iPhone", "iPad"]
 icon = "https://i.krz.sh/apps/orgstar/icon.png"
-header = "https://i.krz.sh/apps/orgstar/hero.jpg"
+header = "https://i.krz.sh/apps/orgstar/hero.jpg?v=0.7.0"
 
 [[extra.highlights]]
 title = "Plain text"
