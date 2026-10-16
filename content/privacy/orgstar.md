@@ -2,6 +2,9 @@
 title = "orgstar Privacy Policy"
 description = "Privacy policy for orgstar, the Org mode editor for iPhone and iPad."
 weight = 4
+
+[extra]
+app = "apps/orgstar.md"
 +++
 
 _last updated: 11 october 2026_

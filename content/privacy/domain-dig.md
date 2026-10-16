@@ -2,6 +2,9 @@
 title = "Domain Dig Privacy Policy"
 description = "Privacy policy for Domain Dig, the DNS and SSL inspector for iOS."
 weight = 2
+
+[extra]
+app = "apps/domain-dig.md"
 +++
 
 _last updated: 2 august 2026_

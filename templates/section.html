@@ -13,6 +13,7 @@
 <ul class="plainlist">
   {% for page in section.pages %}
   <li>
+    {% if page.extra.app %}{% set icon_page = get_page(path=page.extra.app) %}{% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}{% endif %}
     <span class="pl-main">
       <a class="pl-name" href="{{ page.permalink | safe }}">{{ page.title }}</a>
       {% if page.description %}<span class="pl-desc">{{ page.description }}</span>{% endif %}

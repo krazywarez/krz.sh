@@ -2,6 +2,9 @@
 title = "Day by Day Privacy Policy"
 description = "Privacy policy for Day by Day, the calendar-learning app for children."
 weight = 3
+
+[extra]
+app = "apps/daybyday.md"
 +++
 
 _last updated: 2 august 2026_

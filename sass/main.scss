@@ -102,12 +102,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .tagline {
-  font-size: 28px;
-  line-height: 1.25;
-  letter-spacing: -0.025em;
-  font-weight: 500;
-  max-width: 19ch;
-  margin: 0 0 72px;
+  font-size: clamp(34px, 5.2vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+  max-width: 17ch;
+  margin: 8px 0 80px;
+  text-wrap: balance;
 }
 
 // ---- Numbered sections -----------------------------------------------------
@@ -135,55 +136,58 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--dim);
-  margin: 32px 0 2px;
+  margin: 32px 0 10px;
 }
-.dir-group:first-of-type .sec-sub { margin-top: 20px; }
+.svc-group:first-of-type .sec-sub { margin-top: 20px; }
 
-// ---- Directory rows --------------------------------------------------------
-// The name column is fixed so names align down the page; long descriptions
-// wrap inside their own cell rather than pushing the grid out of true.
-.dir { list-style: none; margin: 0; padding: 0; }
-.dir-grid { display: grid; grid-template-columns: 1fr; column-gap: 48px; }
-.dir-item { border-bottom: 1px solid var(--line); }
-
-.dir-row {
+// ---- Home: app rows -------------------------------------------------------
+.app-rows { list-style: none; margin: 0; padding: 0; }
+.app-rows li { border-bottom: 1px solid var(--line); }
+.app-row {
   display: grid;
-  grid-template-columns: 150px 1fr auto;
-  align-items: baseline;
+  grid-template-columns: 44px 160px 1fr auto;
+  align-items: center;
   gap: 4px 20px;
-  padding: 11px 8px 11px 0;
+  padding: 12px 0;
 }
-.dir-name { font-weight: 600; letter-spacing: -0.01em; }
-.dir-desc { color: var(--mut); font-size: 14px; }
-.dir-host { font-family: var(--mono); font-size: 11.5px; color: var(--dim); }
-.dir-item:hover { background: var(--hov); }
-.dir-item:hover .dir-name { color: var(--ac); }
+.app-row-name { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
+.app-row-desc { color: var(--mut); }
+.app-row-go { color: var(--dim); }
+.app-row:hover .app-row-name, .app-row:hover .app-row-go { color: var(--ac); }
+@media (prefers-reduced-motion: no-preference) {
+  .app-row-go { transition: transform 0.2s; }
+  .app-row:hover .app-row-go { transform: translateX(4px); }
+}
 
-.dir-item-app { display: flex; align-items: baseline; gap: 24px; }
-.dir-item-app .dir-row { flex: 1; grid-template-columns: 150px 1fr; min-width: 0; }
-.dir-actions {
+// ---- Services: cards -------------------------------------------------------
+.svc-group + .svc-group { margin-top: 8px; }
+.svc-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 0 32px;
+}
+.svc-card {
   display: flex;
-  gap: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
+  flex-direction: column;
+  height: 100%;
+  padding: 14px 0 16px;
+  border-top: 1px solid var(--line);
 }
-.dir-actions a { color: var(--ac); }
-.dir-actions a:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-@media (min-width: 1000px) {
-  .dir-grid { grid-template-columns: 1fr 1fr; }
-}
+.svc-name { font-size: 16px; font-weight: 700; letter-spacing: -0.015em; }
+.svc-desc { color: var(--mut); font-size: 14px; margin: 2px 0 10px; }
+.svc-host { margin-top: auto; font-family: var(--mono); font-size: 11.5px; color: var(--dim); }
+.svc-card:hover { border-top-color: var(--ac); }
+.svc-card:hover .svc-name, .svc-card:hover .svc-host { color: var(--ac); }
 
 @media (max-width: 760px) {
   :root { --gut: 20px; }
-  .tagline { font-size: 22px; max-width: none; margin-bottom: 48px; }
-  .dir-row { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; }
-  .dir-item-app { display: block; }
-  .dir-item-app .dir-row { grid-template-columns: 1fr; }
-  .dir-actions { padding: 0 0 12px; }
+  .app-row { grid-template-columns: 44px 1fr auto; gap: 0 14px; }
+  .app-row .app-icon { grid-row: span 2; }
+  .app-row-go { grid-row: span 2; grid-column: 3; }
+  .app-row-desc { grid-column: 2; font-size: 14px; line-height: 1.35; }
 }
 
 // ---- Prose (app detail, privacy, home about) -------------------------------
@@ -281,6 +285,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--bg);
 }
 .app-icon-sm { width: 64px; height: 64px; }
+.app-icon-xs { width: 44px; height: 44px; }
 .app-icon-mono {
   display: grid;
   place-items: center;
@@ -292,6 +297,7 @@ a { color: inherit; text-decoration: none; }
 }
 .app-icon.app-icon-mono { font-size: 62px; }
 .app-icon-sm.app-icon-mono { font-size: 36px; }
+.app-icon-xs.app-icon-mono { font-size: 24px; }
 
 .app-art {
   position: relative;
@@ -483,10 +489,36 @@ a { color: inherit; text-decoration: none; }
 
 // ---- Plain list (privacy index) --------------------------------------------
 .plainlist { list-style: none; padding: 0; margin: 20px 0 0; }
-.plainlist li { padding: 11px 0; border-bottom: 1px solid var(--line); }
+.plainlist li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
 .plainlist li:last-child { border-bottom: 0; }
-.pl-name { font-weight: 600; }
+.pl-name { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
+.pl-name::after { content: ""; position: absolute; inset: 0; }
+.plainlist li:hover .pl-name { color: var(--ac); }
 .pl-desc { display: block; color: var(--mut); font-size: 14px; }
+
+// ---- App reference strip (privacy policy pages) -----------------------------
+.app-ref {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: center;
+  gap: 0 14px;
+  max-width: 64ch;
+  margin: 0 0 32px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--tint, var(--ac));
+  background: var(--hov);
+}
+.app-ref .app-icon { grid-row: span 2; }
+.app-ref-name { font-weight: 700; letter-spacing: -0.015em; }
+.app-ref-desc { color: var(--mut); font-size: 14px; }
+.app-ref:hover .app-ref-name { color: var(--ac); }
 
 // ---- Footer ----------------------------------------------------------------
 .site-footer {

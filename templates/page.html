@@ -6,6 +6,13 @@
 {% block content %}
 {% set parent = get_section(path=page.ancestors | last, metadata_only=true) %}
 <p class="back"><a href="{{ parent.permalink | safe }}">&larr; back</a></p>
+{% if page.extra.app %}{% set icon_page = get_page(path=page.extra.app) %}
+<a class="app-ref"{% if icon_page.extra.tint %} style="--tint: {{ icon_page.extra.tint }}"{% endif %} href="{{ icon_page.permalink | safe }}">
+  {% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}
+  <span class="app-ref-name">{{ icon_page.title }}</span>
+  <span class="app-ref-desc">{{ icon_page.extra.tagline | default(value=icon_page.description) }}</span>
+</a>
+{% endif %}
 <article class="prose">
   <h1 class="page-label">{{ page.title }}</h1>
   {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}

@@ -21,8 +21,8 @@
   <header class="site-header">
     <a class="brand" href="{{ get_url(path="/") | safe }}">krz</a>
     <nav class="site-nav">
-      <a href="/#apps">apps</a>
-      <a href="/#services">services</a>
+      <a href="{{ get_url(path="@/apps/_index.md") | safe }}">apps</a>
+      <a href="{{ get_url(path="@/services/_index.md") | safe }}">services</a>
       <a href="/#about">about</a>
     </nav>
   </header>
