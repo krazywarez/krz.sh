@@ -6,6 +6,7 @@ weight = 4
 [extra]
 link = "https://gitbay.org/krz/orgstar"
 link_label = "Source"
+appstore = "https://apps.apple.com/us/app/orgstar-org-mode-agenda/id6821552018"
 privacy = "/privacy/orgstar/"
 tagline = "Your org files, wherever you are."
 tint = "#5b7a2e"
