@@ -12,7 +12,7 @@ tagline = "See how any domain is really configured and served."
 tint = "#0f766e"
 platforms = ["iPhone"]
 icon = "https://i.krz.sh/apps/domaindig/icon.png"
-# header = "https://i.krz.sh/apps/domaindig/header.jpg"
+header = "https://i.krz.sh/apps/domaindig/hero.jpg"
 
 [[extra.highlights]]
 title = "Every record"

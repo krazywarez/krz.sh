@@ -11,7 +11,7 @@ privacy = "/privacy/daybyday/"
 tint = "#c2410c"
 platforms = ["iPhone"]
 icon = "https://i.krz.sh/apps/daybyday/icon.png"
-# header = "https://i.krz.sh/apps/daybyday/header.jpg"
+header = "https://i.krz.sh/apps/daybyday/hero.jpg"
 
 [[extra.highlights]]
 title = "Days to seasons"

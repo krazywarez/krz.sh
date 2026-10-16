@@ -12,7 +12,7 @@ tagline = "Your forge, from the couch."
 tint = "#4338ca"
 platforms = ["iPhone", "iPad"]
 icon = "https://i.krz.sh/apps/gitbay/icon.png"
-# header = "https://i.krz.sh/apps/gitbay/header.jpg"
+header = "https://i.krz.sh/apps/gitbay/hero.jpg"
 
 [[extra.highlights]]
 title = "Review and merge"

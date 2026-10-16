@@ -12,7 +12,7 @@ tagline = "SourceHut workflows, built for mobile."
 tint = "#3d5a80"
 platforms = ["iPhone"]
 icon = "https://i.krz.sh/apps/hutch/icon.png"
-# header = "https://i.krz.sh/apps/hutch/header.jpg"
+header = "https://i.krz.sh/apps/hutch/hero.jpg"
 
 [[extra.highlights]]
 title = "Review patches"
