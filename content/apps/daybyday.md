@@ -9,42 +9,55 @@ link_label = "Source"
 appstore = "https://apps.apple.com/us/app/daybyday-learn/id6760321939"
 privacy = "/privacy/daybyday/"
 tint = "#c2410c"
-platforms = ["iPhone"]
+platforms = ["iPhone", "iPad"]
 icon = "https://i.krz.sh/apps/daybyday/icon.png"
-header = "https://i.krz.sh/apps/daybyday/hero.jpg"
+header = "https://i.krz.sh/apps/daybyday/hero.jpg?v=2.0"
 
 [[extra.highlights]]
-title = "Days to seasons"
-text = "Weeks, months and seasons, one step at a time."
+title = "Learning games"
+text = "Find it, week train, tracing, counting and more across 11 topics."
 
 [[extra.highlights]]
 title = "For little hands"
-text = "Large targets and a calm, simple interface."
+text = "Big pictures, no reading needed, and every prompt spoken aloud."
 
 [[extra.highlights]]
 title = "No data collected"
 text = "No ads, no accounts, nothing leaves the device."
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/daybyday/screenshots/web/01-home.jpg"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/01-home.jpg?v=2.0"
 alt = "Home"
 caption = "pick a topic"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/daybyday/screenshots/web/02-today.jpg"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/02-routine.jpg?v=2.0"
 alt = "Today"
-caption = "today's day, date, month and season"
+caption = "a daily routine for each child"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/daybyday/screenshots/web/03-colors.jpg"
-alt = "Colors"
-caption = "learn colors"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/03-animals.jpg?v=2.0"
+alt = "Animals"
+caption = "cards with sounds and facts"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/daybyday/screenshots/web/04-shapes.jpg"
-alt = "Shapes"
-caption = "learn shapes"
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/04-train.jpg?v=2.0"
+alt = "Week train"
+caption = "put the days in order"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/05-trace.jpg?v=2.0"
+alt = "Tracing"
+caption = "trace letters and shapes"
+
+[[extra.screenshots]]
+src = "https://i.krz.sh/apps/daybyday/screenshots/web/06-calendar.jpg?v=2.0"
+alt = "Stickers"
+caption = "a sticker for every day"
 +++
 
-Day by Day is a gentle, ad-free iOS app that helps children learn days, weeks,
-months, and seasons. Designed for little hands, with no data collection.
+Day by Day is a gentle, ad-free iOS app of learning games for children aged
+4 and 5: days, months, seasons, numbers, colors, shapes, letters, animals,
+weather, body parts, and food. A friendly owl asks the questions, a daily routine
+ends with a sticker on the calendar, and practice adapts to what each child is
+still learning. Designed for little hands, with no data collection.
