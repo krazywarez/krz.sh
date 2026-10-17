@@ -1,6 +1,6 @@
 +++
 title = "Day by Day"
-description = "An educational iOS app that helps children learn the calendar."
+description = "An educational iOS app with learning games for young children."
 weight = 4
 
 [extra]
