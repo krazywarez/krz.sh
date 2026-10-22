@@ -12,9 +12,10 @@ _last updated: 21 october 2026_
 Moonrise has no accounts, no analytics, no advertising, no in-app purchases,
 and no third-party trackers or SDKs. your location is never sent to our
 server. if you turn on aurora alerts or news alerts, the app sends our server
-four things needed to deliver them, described below. if you turn on cloud
-forecasts, it sends a rounded location to Apple's weather service. nothing
-else is collected.
+four things needed to deliver them, described below. if you follow a rocket or
+launch provider, it sends a Live Activity token and that list. if you turn on
+cloud forecasts, it sends a rounded location to Apple's weather service.
+nothing else is collected.
 
 ## location
 
@@ -72,12 +73,37 @@ checked in for 180 days.
 
 ## live activities
 
-Live Activities on the Lock Screen (launch countdowns, satellite passes and
-eclipse contact times) run on your device and send nothing to our server. when
-you follow a launch, its countdown can be updated if the launch is held,
-delayed or scrubbed. those updates are broadcast by our server through Apple to
-every device following that launch; the broadcast does not identify your
+Live Activities on the Lock Screen (launch countdowns, satellite passes,
+eclipse contact times, meteor shower nights and geomagnetic storms) run on your
+device and send nothing to our server. when you follow a launch or a storm, its
+Live Activity can be updated as it changes: a launch held, delayed or scrubbed,
+or a storm strengthening or ending. those updates are broadcast by our server
+through Apple to every device following; the broadcast does not identify your
 device, and our server does not know who is following.
+
+## launch countdowns
+
+following a rocket or launch provider is off until you turn it on from a
+launch's page. when you follow one, the app sends our server:
+
+- a Live Activity token, which Apple issues so a server can start a Live
+  Activity on this device;
+- the names of the rockets and launch providers you follow.
+
+these are stored with the time the app last checked in and used only to start
+a countdown on your Lock Screen an hour before a matching launch. they are not
+linked to your alert settings, your identity or your location, and are not
+shared. they are deleted when you stop following everything, when Apple
+reports the token is no longer valid, or after 180 days without the app
+checking in.
+
+## app integrity
+
+to check that requests to our server come from a genuine copy of Moonrise, the
+app creates a key with Apple's App Attest service the first time it registers
+for alerts or launch countdowns, and signs those registrations with it. our
+server stores the key's public part, a counter and when it was last used. this
+is not linked to any other data and is deleted after 180 days without use.
 
 ## data on your device
 
