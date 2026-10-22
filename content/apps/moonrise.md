@@ -19,7 +19,7 @@ text = "Stars, planets and the Moon for your place and time, from 3000 BCE to 30
 
 [[extra.highlights]]
 title = "Live space"
-text = "The Sun now, aurora alerts, launches, satellite passes and the Deep Space Network."
+text = "The Sun and solar wind now, aurora alerts, launches, eclipses, satellite passes and the Deep Space Network."
 
 [[extra.highlights]]
 title = "Library"
@@ -66,14 +66,33 @@ alt = "Jupiter"
 caption = "every planet and major moon"
 +++
 
-Moonrise draws the sky above you from real data: about 8,400 stars, all 88
-constellations, the planets and the Moon at its true phase, with sky cultures,
-guided tours and a red night mode. The System tab shows the planets and
-deep-space probes, from above or in 3D, between 1958 and 2050. The Sun tab
-shows NASA's latest images and the aurora forecast. Launches have countdowns
-and Live Activities, and the Library covers the solar system, stars, deep-sky
-objects, spacecraft and rockets. Widgets and an Apple Watch app show the Moon
-and the planets.
+Moonrise draws the sky above you from real data: about 130,000 stars down to
+magnitude 9, all 88 constellations, the Milky Way, 900 galaxies, clusters and
+nebulae, bright comets, the planets and the Moon at its true phase, with sky
+cultures, guided tours, a horizon you can draw and a red night mode. Hold the
+phone up to see the sky over the camera.
+
+The System tab shows the planets, comets and spacecraft from above or in 3D,
+between 1958 and 2050, including Juno, Europa Clipper, JUICE, Psyche, Lucy and
+Parker Solar Probe. The Sun tab shows NASA's latest images with active regions
+labelled, the solar wind, the coronagraph, NOAA's solar wind forecast, the
+solar cycle, the aurora forecast and today's golden and blue hours.
+
+Events lists the year's eclipses, meteor showers and planets at their best.
+Eclipses come with local contact times, cloud history along the path, the
+nearest place to see totality, an exposure guide and taps on the wrist from
+Apple Watch. Launches have countdowns on the Lock Screen that update as the
+launch is held or scrubbed, and can start on their own for the rockets and
+providers you follow. Geomagnetic storms, meteor shower nights, satellite
+passes and eclipses can go on the Lock Screen too.
+
+The observing log keeps plain-text files and tracks programs such as the
+Messier list. It exports variable star estimates for the AAVSO, comet
+observations for COBS and meteor counts for the IMO. The Library covers the
+solar system, stars, deep-sky objects, spacecraft and rockets. Widgets show
+the Moon, the planets, Kp, the next launch, Voyager 1 and the Sun; the Apple
+Watch app shows the Moon and the planets; Control Center controls open the
+Sky, Sun and Launches tabs.
 
 No accounts, ads or tracking. Location stays on the device; anything that can
 be computed works offline.
