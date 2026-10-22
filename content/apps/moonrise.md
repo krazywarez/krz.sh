@@ -11,7 +11,7 @@ tagline = "Night sky, planets, missions."
 tint = "#0a1424"
 platforms = ["iPhone", "iPad", "Mac", "Apple Watch"]
 icon = "https://i.krz.sh/apps/moonrise/icon.png"
-header = "https://i.krz.sh/apps/moonrise/hero.jpg?v=1.0.0"
+header = "https://i.krz.sh/apps/moonrise/hero.jpg?v=5.8.0"
 
 [[extra.highlights]]
 title = "Your sky"
@@ -26,42 +26,42 @@ title = "Library"
 text = "370 pages on planets, moons, stars, constellations, deep-sky objects and spacecraft."
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/01-sky.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/01-sky.jpg?v=5.8.0"
 alt = "Sky"
 caption = "the sky where you are"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/02-tonight.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/02-tonight.jpg?v=5.8.0"
 alt = "Tonight"
 caption = "moon, planets and passes tonight"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/03-system.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/03-system.jpg?v=5.8.0"
 alt = "Solar system map"
 caption = "probes leaving the solar system"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/04-3d.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/04-3d.jpg?v=5.8.0"
 alt = "Solar system in 3D"
 caption = "the solar system in 3D"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/05-sun.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/05-sun.jpg?v=5.8.0"
 alt = "Sun"
 caption = "the Sun now, and the aurora"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/06-launches.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/06-launches.jpg?v=5.8.0"
 alt = "Launches"
 caption = "launches with countdowns"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/07-library.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/07-library.jpg?v=5.8.0"
 alt = "Library"
 caption = "a library of 370 pages"
 
 [[extra.screenshots]]
-src = "https://i.krz.sh/apps/moonrise/screenshots/web/08-jupiter.jpg?v=1.0.0"
+src = "https://i.krz.sh/apps/moonrise/screenshots/web/08-jupiter.jpg?v=5.8.0"
 alt = "Jupiter"
 caption = "every planet and major moon"
 +++
