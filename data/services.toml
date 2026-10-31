@@ -19,16 +19,6 @@ name = "proxies / front-ends"
   description = "Fandom alternative front-end"
 
   [[groups.items]]
-  name = "Gothub"
-  url = "https://gh.krz.sh"
-  description = "alternative GitHub interface"
-
-  [[groups.items]]
-  name = "LibremDB"
-  url = "https://ld.krz.sh"
-  description = "IMDb alternative front-end"
-
-  [[groups.items]]
   name = "Binternet"
   url = "https://pin.krz.sh"
   description = "Pinterest alternative front-end"
@@ -80,11 +70,6 @@ name = "other services"
   name = "Send"
   url = "https://send.krz.sh"
   description = "simple, private file sharing"
-
-  [[groups.items]]
-  name = "Slash"
-  url = "https://slash.krz.sh"
-  description = "bookmark and link sharing platform; account required"
 
 [[groups]]
 name = "software i maintain"
