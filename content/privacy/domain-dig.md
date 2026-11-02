@@ -7,7 +7,7 @@ weight = 2
 app = "apps/domain-dig.md"
 +++
 
-_last updated: 2 august 2026_
+_last updated: 2 november 2026_
 
 Domain Dig inspects DNS records, SSL/TLS certificates, ownership, and related
 signals for domains you enter. every lookup runs from your device. we operate no
@@ -37,8 +37,17 @@ addresses you look up are therefore visible to these resolvers and services, and
 may be logged by them under their own policies. we do not see or record any of
 it.
 
-if you configure a Webhook or Slack integration, Domain Dig sends alerts to the
-URL you provide; that destination is chosen and controlled by you.
+the enrichment services are optional. turning off "allow third-party
+enrichment" under History & Network in Settings stops Domain Dig contacting
+rdap.org, crt.sh, and ipapi.co at all; ownership, subdomain discovery, and IP
+location become unavailable, and registration is decided from DNS alone.
+
+if you configure a Webhook, Slack, or SMTP integration, Domain Dig sends alerts
+to the destination you provide; that destination is chosen and controlled by
+you, and SMTP credentials are refused unless the connection uses TLS. if you
+configure an S3-compatible bucket, a finished report is uploaded to the endpoint
+and credentials you provide. the optional local API binds to localhost on your
+own device and requires a token stored in the Keychain.
 
 ## changes
 
