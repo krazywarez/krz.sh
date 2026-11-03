@@ -10,5 +10,15 @@
     </a>
   </li>
   {% endfor %}
+  {% set upcoming = load_data(path="data/upcoming.toml") %}
+  {% for app in upcoming.apps %}
+  <li style="--tint: {{ app.extra.tint }}">
+    <div class="app-row">
+      {% set icon_page = app %}{% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}
+      <span class="app-row-name">{{ app.title }}</span>
+      <span class="app-row-desc">{{ app.description }}</span>
+    </div>
+  </li>
+  {% endfor %}
 </ul>
 <p class="dir-more"><a href="{{ apps.permalink | safe }}">all apps &rarr;</a></p>
