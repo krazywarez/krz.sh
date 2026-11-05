@@ -1,31 +1,35 @@
 {% extends "base.html" %}
 
-{% block title %}{{ section.title | lower }} &middot; {{ config.title }}{% endblock title %}
-{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
+{% block title %}{{ page.title | lower }} &middot; {{ site.title }}{% endblock %}
+{% block description %}{{ page.keywords.description | default(site.description) }}{% endblock %}
 
 {% block content %}
 <article class="prose">
-  <h1 class="page-label">{{ section.title }}</h1>
-  {{ section.content | safe }}
+  <h1 class="page-label">{{ page.title }}</h1>
+  {{ body | safe }}
 </article>
 
-{% if section.pages %}
+{#- Lists the pages one directory below this section index, by #+WEIGHT:. #}
+{% set section = page.source | replace("index.org", "") %}
+{% set plain = page.keywords.plain %}
+{% set entries = pages | selectattr("source", "startingwith", section) | rejectattr("source", "eq", page.source) | sort(attribute="keywords.weight") %}
+{% if entries %}
 <ul class="plainlist">
-  {% for page in section.pages %}
+  {% for page in entries %}
   <li>
-    {% if page.extra.app %}{% set icon_page = get_page(path=page.extra.app) %}{% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}{% endif %}
+    {% if page.keywords.app %}{% set icon_page = pages | selectattr("source", "eq", page.keywords.app) | first %}{% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}{% endif %}
     <span class="pl-main">
-      <a class="pl-name" href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      {% if page.description %}<span class="pl-desc">{{ page.description }}</span>{% endif %}
+      <a class="pl-name" href="/{{ page.url | replace("index.html", "") }}">{{ page.title }}</a>
+      {% if page.keywords.description %}<span class="pl-desc">{{ page.keywords.description }}</span>{% endif %}
     </span>
-    {% if not section.extra.plain %}
+    {% if not plain %}
     <span class="pl-links">
-      {% if page.extra.appstore %}<a class="pl-link" href="{{ page.extra.appstore }}">app store &rarr;</a>{% endif %}
-      {% if page.extra.link %}<a class="pl-link" href="{{ page.extra.link }}">{{ page.extra.link_label | default(value="source") | lower }} &rarr;</a>{% endif %}
+      {% if page.keywords.appstore %}<a class="pl-link" href="{{ page.keywords.appstore }}">app store &rarr;</a>{% endif %}
+      {% if page.keywords.repo %}<a class="pl-link" href="{{ page.keywords.repo }}">source &rarr;</a>{% endif %}
     </span>
     {% endif %}
   </li>
   {% endfor %}
 </ul>
 {% endif %}
-{% endblock content %}
+{% endblock %}

@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="{{ lang | default(value="en") }}">
+<html lang="{{ site.language }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <title>{% block title %}{{ site.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
   <meta name="color-scheme" content="dark light">
-  <link rel="stylesheet" href="{{ get_url(path="main.css", cachebust=true) | safe }}">
-  <link rel="icon" href="{{ get_url(path="favicon.svg", cachebust=true) | safe }}">
-  <link rel="apple-touch-icon" href="{{ get_url(path="apple-touch-icon.png", cachebust=true) | safe }}">
+  {#- build.sh appends ?h=<content hash> to these four URLs. #}
+  <link rel="stylesheet" href="/main.css">
+  <link rel="icon" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="{{ config.title }}">
-  <meta property="og:url" content="{{ current_url | default(value=config.base_url) | safe }}">
-  <meta property="og:image" content="{{ get_url(path="og.png", cachebust=true) | safe }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:url" content="{{ page.url | replace("index.html", "") | absolute }}">
+  <meta property="og:image" content="{{ "og.png" | absolute }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="{{ get_url(path="/") | safe }}">krz</a>
+    <a class="brand" href="/">krz</a>
     <nav class="site-nav">
-      <a href="{{ get_url(path="@/apps/_index.md") | safe }}">apps</a>
-      <a href="{{ get_url(path="@/services/_index.md") | safe }}">services</a>
+      <a href="/apps/">apps</a>
+      <a href="/services/">services</a>
       <a href="/#about">about</a>
     </nav>
   </header>
 
   <main class="site-main">
-    {% block content %}{% endblock content %}
+    {% block content %}{% endblock %}
   </main>
 
   <footer class="site-footer">
-    <p class="foot-links"><a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a> · <a href="https://gitbay.org/krz">git</a> · <a href="{{ get_url(path="/privacy/") | safe }}">privacy</a> · &copy; {{ now() | date(format="%Y") }} · public domain</p>
+    {#- build.sh sets the year to the year of the build. #}
+    <p class="foot-links"><a href="mailto:root@krz.sh">root@krz.sh</a> · <a href="https://gitbay.org/krz">git</a> · <a href="/privacy/">privacy</a> · &copy; 2026 · public domain</p>
   </footer>
 </body>
 </html>

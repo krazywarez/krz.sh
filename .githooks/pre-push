@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build with zola and deploy public/ to homelab on push to main.
+# Build with orgo and deploy public/ to homelab on push to main.
 set -euo pipefail
 
 remote_host="homelab"
@@ -19,8 +19,8 @@ if [ "$deploy" -eq 0 ]; then
   exit 0
 fi
 
-echo "pre-push: building site with zola..."
-zola build
+echo "pre-push: building site with orgo..."
+./build.sh
 
 echo "pre-push: deploying to ${remote_host}:${remote_path}..."
 # Upload assets before HTML so a page never references a cachebust URL

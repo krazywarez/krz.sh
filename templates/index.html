@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p class="tagline">{{ config.extra.tagline }}</p>
+<p class="tagline">{{ site.description }}</p>
 
 <section class="sec" id="apps">
   <h2 class="sec-label">Apps</h2>
@@ -15,6 +15,6 @@
 
 <section class="sec" id="about">
   <h2 class="sec-label">About</h2>
-  <div class="prose">{{ section.content | safe }}</div>
+  <div class="prose">{{ body | safe }}</div>
 </section>
-{% endblock content %}
+{% endblock %}

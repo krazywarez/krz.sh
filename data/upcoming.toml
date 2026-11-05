@@ -1,6 +1,0 @@
-# Unreleased apps. Rendered as rows without links after the home page app list.
-
-[[apps]]
-title = '${secret_title}'
-extra = { tint = "#2f4858" }
-description = "An upcoming city builder for iPhone, iPad and Mac."

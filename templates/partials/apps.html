@@ -1,24 +1,23 @@
-{% set apps = get_section(path="apps/_index.md") %}
+{% import "data/upcoming.html" as upcoming %}
 <ul class="app-rows">
-  {% for page in apps.pages %}
-  <li{% if page.extra.tint %} style="--tint: {{ page.extra.tint }}"{% endif %}>
-    <a class="app-row" href="{{ page.permalink | safe }}">
+  {% for page in pages | selectattr("source", "startingwith", "apps/") | rejectattr("source", "eq", "apps/index.org") | sort(attribute="keywords.weight") %}
+  <li{% if page.keywords.tint %} style="--tint: {{ page.keywords.tint }}"{% endif %}>
+    <a class="app-row" href="/{{ page.url | replace("index.html", "") }}">
       {% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}
       <span class="app-row-name">{{ page.title }}</span>
-      <span class="app-row-desc">{{ page.extra.tagline | default(value=page.description) }}</span>
+      <span class="app-row-desc">{{ page.keywords.tagline | default(page.keywords.description) }}</span>
       <span class="app-row-go" aria-hidden="true">&rarr;</span>
     </a>
   </li>
   {% endfor %}
-  {% set upcoming = load_data(path="data/upcoming.toml") %}
   {% for app in upcoming.apps %}
-  <li style="--tint: {{ app.extra.tint }}">
+  <li style="--tint: {{ app.keywords.tint }}">
     <div class="app-row">
       {% set icon_page = app %}{% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}
       <span class="app-row-name">{{ app.title }}</span>
-      <span class="app-row-desc">{{ app.description }}</span>
+      <span class="app-row-desc">{{ app.keywords.description }}</span>
     </div>
   </li>
   {% endfor %}
 </ul>
-<p class="dir-more"><a href="{{ apps.permalink | safe }}">all apps &rarr;</a></p>
+<p class="dir-more"><a href="/apps/">all apps &rarr;</a></p>

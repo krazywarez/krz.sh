@@ -1,0 +1,6 @@
+#+TITLE: Apps
+#+DESCRIPTION: Small, durable apps and privacy-focused frontends from krz.
+#+TEMPLATE: apps.html
+
+Native apps and privacy-respecting frontends. Each one is small, focused, and
+built to last. Source is at [[https://gitbay.org/krz][gitbay.org/krz]].

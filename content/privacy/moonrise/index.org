@@ -1,32 +1,26 @@
-+++
-title = "Moonrise Privacy Policy"
-description = "Privacy policy for Moonrise, the night sky and space app for iPhone, iPad and Apple Watch."
-weight = 5
+#+TITLE: Moonrise Privacy Policy
+#+DESCRIPTION: Privacy policy for Moonrise, the night sky and space app for iPhone, iPad and Apple Watch.
+#+WEIGHT: 5
+#+APP: apps/moonrise/index.org
 
-[extra]
-app = "apps/moonrise.md"
-+++
-
-_last updated: 21 october 2026_
+/last updated: 21 october 2026/
 
 Moonrise has no accounts, no analytics, no advertising, no in-app purchases,
 and no third-party trackers or SDKs. your location is never sent to our
 server. if you turn on aurora alerts or news alerts, the app sends our server
 four things needed to deliver them, described below. if you follow a rocket or
 launch provider, it sends a Live Activity token and that list. if you turn on
-cloud forecasts, it sends a rounded location to Apple's weather service.
+cloud forecasts, it sends a rounded location to Apple’s weather service.
 nothing else is collected.
 
-## location
-
+* location
 if you allow it, Moonrise uses your location to work out where the Sun, Moon,
 planets, stars and satellites are in your sky. this happens on your device.
 your location is never sent to us. you can choose a city in Settings instead.
 
-## cloud forecasts
-
+* cloud forecasts
 cloud forecasts are off until you turn them on in Settings. when they are on,
-the app asks Apple's weather service (WeatherKit) for an hourly forecast,
+the app asks Apple’s weather service (WeatherKit) for an hourly forecast,
 sending your location or chosen city rounded to 0.1° of latitude and
 longitude, about 10 km. it asks at most once every three hours for each place,
 and only while the app is open. the request goes from your device to Apple,
@@ -35,14 +29,13 @@ provide the forecast, is not associated with personally identifiable
 information and is not tracked between requests. the forecast is kept on your
 device. turning cloud forecasts off deletes it.
 
-## network connections
-
+* network connections
 to show live data, the app requests:
 
 - space weather, launch schedules and satellite orbits from our server,
   moonrise.krz.sh, which runs on Cloudflare Workers;
-- space weather and aurora data from NOAA's Space Weather Prediction Center;
-- images of the Sun from NASA's Solar Dynamics Observatory;
+- space weather and aurora data from NOAA’s Space Weather Prediction Center;
+- images of the Sun from NASA’s Solar Dynamics Observatory;
 - images in the Library from NASA, ESA, ESO, NOIRLab and the Library of
   Congress;
 - Deep Space Network status and Mars rover raw images from NASA/JPL;
@@ -50,18 +43,17 @@ to show live data, the app requests:
 
 these requests contain no identifiers. as with any internet request, the
 servers receive your IP address. Cloudflare may keep short-lived logs; see
-Cloudflare's privacy policy.
+Cloudflare’s privacy policy.
 
-## aurora and news alerts
-
+* aurora and news alerts
 both are off until you turn them on in Settings. when either is on, the app
 sends our server:
 
-- this device's push notification token, which Apple issues so a server can
+- this device’s push notification token, which Apple issues so a server can
   send it notifications;
 - a 5° band of geomagnetic latitude worked out on the device (for example
-  "50° to 55° north"), not your location;
-- your time zone's offset from UTC, so aurora alerts arrive at night and the
+  “50° to 55° north”), not your location;
+- your time zone’s offset from UTC, so aurora alerts arrive at night and the
   news digest at 9 a.m.;
 - which of the two alerts are on.
 
@@ -71,8 +63,7 @@ both alerts off deletes them from the server. a token that Apple reports as no
 longer valid is deleted automatically, and so is any device that has not
 checked in for 180 days.
 
-## live activities
-
+* live activities
 Live Activities on the Lock Screen (launch countdowns, satellite passes,
 eclipse contact times, meteor shower nights and geomagnetic storms) run on your
 device and send nothing to our server. when you follow a launch or a storm, its
@@ -81,10 +72,9 @@ or a storm strengthening or ending. those updates are broadcast by our server
 through Apple to every device following; the broadcast does not identify your
 device, and our server does not know who is following.
 
-## launch countdowns
-
+* launch countdowns
 following a rocket or launch provider is off until you turn it on from a
-launch's page. when you follow one, the app sends our server:
+launch’s page. when you follow one, the app sends our server:
 
 - a Live Activity token, which Apple issues so a server can start a Live
   Activity on this device;
@@ -97,26 +87,22 @@ shared. they are deleted when you stop following everything, when Apple
 reports the token is no longer valid, or after 180 days without the app
 checking in.
 
-## app integrity
-
+* app integrity
 to check that requests to our server come from a genuine copy of Moonrise, the
-app creates a key with Apple's App Attest service the first time it registers
+app creates a key with Apple’s App Attest service the first time it registers
 for alerts or launch countdowns, and signs those registrations with it. our
-server stores the key's public part, a counter and when it was last used. this
+server stores the key’s public part, a counter and when it was last used. this
 is not linked to any other data and is deleted after 180 days without use.
 
-## data on your device
-
+* data on your device
 your settings, chosen city, the daily summary notification, the cloud forecast
 and your observing log stay on the device. the observing log is saved as
 plain-text files you can read in the Files app. they are included in your
-device's iCloud or computer backups if you have those turned on. deleting the
+device’s iCloud or computer backups if you have those turned on. deleting the
 app deletes them, apart from any log files you have moved elsewhere.
 
-## changes
-
+* changes
 if this policy changes, the updated version will be posted here with a new date.
 
-## contact
-
-questions: [root@krz.sh](mailto:root@krz.sh).
+* contact
+questions: [[mailto:root@krz.sh][root@krz.sh]].

@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}{{ section.title | lower }} &middot; {{ config.title }}{% endblock title %}
-{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
+{% block title %}{{ page.title | lower }} &middot; {{ site.title }}{% endblock %}
+{% block description %}{{ page.keywords.description | default(site.description) }}{% endblock %}
 
 {% block content %}
-<h1 class="page-label">{{ section.title }}</h1>
-<div class="prose apps-intro">{{ section.content | safe }}</div>
+<h1 class="page-label">{{ page.title }}</h1>
+<div class="prose apps-intro">{{ body | safe }}</div>
 {% include "partials/services.html" %}
-{% endblock content %}
+{% endblock %}

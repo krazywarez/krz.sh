@@ -1,0 +1,39 @@
+{#- Public services hosted by krz. Rendered on the home page and /services/ by
+    partials/services.html, which imports `groups` from here. -#}
+{%- set groups = [
+  {
+    "name": "proxies / front-ends",
+    "items": [
+      {"name": "AnonymousOverflow", "url": "https://ao.krz.sh", "description": "StackOverflow alternative front-end"},
+      {"name": "BiblioReads", "url": "https://br.krz.sh", "description": "Goodreads alternative front-end"},
+      {"name": "BreezeWiki", "url": "https://bw.krz.sh", "description": "Fandom alternative front-end"},
+      {"name": "Binternet", "url": "https://pin.krz.sh", "description": "Pinterest alternative front-end"},
+      {"name": "Piped", "url": "https://pipedapi.krz.sh", "description": "YouTube alternative front-end"},
+      {"name": "Small", "url": "https://small.krz.sh", "description": "Medium alternative front-end"},
+    ],
+  },
+  {
+    "name": "other services",
+    "items": [
+      {"name": "CyberChef", "url": "https://cc.krz.sh", "description": "the Cyber Swiss Army Knife"},
+      {"name": "Hat.sh", "url": "https://hat.krz.sh", "description": "simple, fast, secure client-side file encryption"},
+      {"name": "LibreTranslate", "url": "https://lt.krz.sh", "description": "a translation engine"},
+      {"name": "Mazanoke", "url": "https://mz.krz.sh", "description": "local image optimizer that runs in your browser"},
+      {"name": "FlashPaper", "url": "https://paste.krz.sh", "description": "one-time encrypted password and secret sharing"},
+      {"name": "SearXNG", "url": "https://search.krz.sh", "description": "a privacy-respecting open metasearch engine"},
+      {"name": "Send", "url": "https://send.krz.sh", "description": "simple, private file sharing"},
+    ],
+  },
+  {
+    "name": "software i maintain",
+    "items": [
+      {"name": "1kb", "url": "https://rogue.krz.sh/1kb/#g", "description": "ultra-small roguelike game"},
+      {"name": "1mb", "url": "https://rogue.krz.sh/1mb/", "description": "extension of 1kb, showing what's possible with 1mb"},
+      {"name": "gitbay", "url": "https://gitbay.org", "description": "a CLI-first git forge, where SSH is the API"},
+      {"name": "hn", "url": "https://hn.krz.sh", "description": "Hacker News proxy"},
+      {"name": "Office", "url": "https://office.krz.sh", "description": "the world's smallest office suite; fork of awfice"},
+      {"name": "org-live", "url": "https://org.krz.sh", "description": "a basic org-mode editor for the web"},
+      {"name": "SkunkyArt", "url": "https://art.krz.sh", "description": "DeviantArt alternative front-end; fork of an unmaintained upstream"},
+    ],
+  },
+] -%}

@@ -1,0 +1,12 @@
+{#- Unreleased apps. Rendered as rows without links after the home page app list.
+    Each entry is shaped like a page (title, keywords) so partials/app-icon.html can
+    render it. -#}
+{%- set apps = [
+  {
+    "title": "${secret_title}",
+    "keywords": {
+      "tint": "#2f4858",
+      "description": "An upcoming city builder for iPhone, iPad and Mac.",
+    },
+  },
+] -%}

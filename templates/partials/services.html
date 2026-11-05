@@ -1,4 +1,4 @@
-{% set services = load_data(path="data/services.toml") %}
+{% import "data/services.html" as services %}
 {% for group in services.groups %}
 <div class="svc-group">
   <h3 class="sec-sub">{{ group.name }}</h3>
@@ -8,7 +8,7 @@
       <a class="svc-card" href="{{ item.url }}">
         <span class="svc-name">{{ item.name }}</span>
         <span class="svc-desc">{{ item.description }}</span>
-        <span class="svc-host">{{ item.url | replace(from="https://", to="") }}</span>
+        <span class="svc-host">{{ item.url | replace("https://", "") }}</span>
       </a>
     </li>
     {% endfor %}

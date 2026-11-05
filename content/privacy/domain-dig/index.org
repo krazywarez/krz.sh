@@ -1,33 +1,26 @@
-+++
-title = "Domain Dig Privacy Policy"
-description = "Privacy policy for Domain Dig, the DNS and SSL inspector for iOS."
-weight = 2
+#+TITLE: Domain Dig Privacy Policy
+#+DESCRIPTION: Privacy policy for Domain Dig, the DNS and SSL inspector for iOS.
+#+WEIGHT: 2
+#+APP: apps/domain-dig/index.org
 
-[extra]
-app = "apps/domain-dig.md"
-+++
-
-_last updated: 2 november 2026_
+/last updated: 2 november 2026/
 
 Domain Dig inspects DNS records, SSL/TLS certificates, ownership, and related
 signals for domains you enter. every lookup runs from your device. we operate no
 servers, and we receive none of your data.
 
-## what we collect
-
+* what we collect
 nothing. no account, no analytics, no ads, no third-party trackers or SDKs.
 
-## what stays on your device
-
+* what stays on your device
 recent lookups and their results are stored locally on your device so you can
 revisit them. deleting the app removes the local copy. if you turn on iCloud
 sync (off by default), your settings, monitoring configuration, domain notes,
 and history metadata are stored in your own private iCloud account so they carry
-across your devices. that data goes to Apple's iCloud, never to us, and you can
+across your devices. that data goes to Apple’s iCloud, never to us, and you can
 turn it off in Settings.
 
-## network connections
-
+* network connections
 to answer a lookup, Domain Dig queries public DNS resolvers and connects to the
 hosts you inspect in order to read their certificates. it also contacts a few
 third-party lookup services to enrich the results: an IP-geolocation provider
@@ -37,8 +30,8 @@ addresses you look up are therefore visible to these resolvers and services, and
 may be logged by them under their own policies. we do not see or record any of
 it.
 
-the enrichment services are optional. turning off "allow third-party
-enrichment" under History & Network in Settings stops Domain Dig contacting
+the enrichment services are optional. turning off “allow third-party
+enrichment” under History & Network in Settings stops Domain Dig contacting
 rdap.org, crt.sh, and ipapi.co at all; ownership, subdomain discovery, and IP
 location become unavailable, and registration is decided from DNS alone.
 
@@ -49,10 +42,8 @@ configure an S3-compatible bucket, a finished report is uploaded to the endpoint
 and credentials you provide. the optional local API binds to localhost on your
 own device and requires a token stored in the Keychain.
 
-## changes
-
+* changes
 if this policy changes, the updated version will be posted here with a new date.
 
-## contact
-
-questions: [root@krz.sh](mailto:root@krz.sh).
+* contact
+questions: [[mailto:root@krz.sh][root@krz.sh]].

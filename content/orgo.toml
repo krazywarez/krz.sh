@@ -1,0 +1,43 @@
+# orgo configuration for krz.sh.
+#
+# content/ is the URL root. Every page is a directory index (apps/hutch/index.org
+# publishes at /apps/hutch/), which keeps the URLs the Zola build had.
+#
+#   ./build.sh                                   # build public/ for deploy
+#   orgo serve content -o /tmp/krz-preview       # write and preview
+
+[site]
+title = "krz"
+description = "Small, durable software focused on utility, privacy, and control."
+language = "en"
+# Set for og:url, og:image and sitemap.xml, which need absolute URLs.
+base_url = "https://krz.sh"
+
+[nav]
+# The header nav is written in templates/base.html.
+mode = "none"
+
+[templates]
+dir = "../templates"
+# The home page lists the apps, and privacy pages show the icon of the app they belong
+# to, so templates need other pages' metadata. Small site; re-rendering all of it on
+# every add or retitle costs nothing.
+expose_page_list = true
+
+[build]
+assets = ["../static"]
+
+[html]
+heading_offset = 1
+# Templates do not render a contents list.
+toc = false
+# The prose was written as markdown, where a_b means nothing.
+sub_superscript = "no"
+
+[[pages]]
+match = "apps"
+template = "app.html"
+
+[[pages]]
+match = "privacy"
+template = "page.html"

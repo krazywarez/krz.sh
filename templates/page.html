@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title | lower }} &middot; {{ config.title }}{% endblock title %}
-{% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
+{% block title %}{{ page.title | lower }} &middot; {{ site.title }}{% endblock %}
+{% block description %}{{ page.keywords.description | default(site.description) }}{% endblock %}
 
 {% block content %}
-{% set parent = get_section(path=page.ancestors | last, metadata_only=true) %}
-<p class="back"><a href="{{ parent.permalink | safe }}">&larr; back</a></p>
-{% if page.extra.app %}{% set icon_page = get_page(path=page.extra.app) %}
-<a class="app-ref"{% if icon_page.extra.tint %} style="--tint: {{ icon_page.extra.tint }}"{% endif %} href="{{ icon_page.permalink | safe }}">
+{#- page.url is <section>/<name>/index.html; the section index is two components up. #}
+<p class="back"><a href="/{{ (page.url | split("/"))[:-2] | join("/") }}/">&larr; back</a></p>
+{% if page.keywords.app %}{% set icon_page = pages | selectattr("source", "eq", page.keywords.app) | first %}
+<a class="app-ref"{% if icon_page.keywords.tint %} style="--tint: {{ icon_page.keywords.tint }}"{% endif %} href="/{{ icon_page.url | replace("index.html", "") }}">
   {% set icon_class = "app-icon app-icon-xs" %}{% include "partials/app-icon.html" %}
   <span class="app-ref-name">{{ icon_page.title }}</span>
-  <span class="app-ref-desc">{{ icon_page.extra.tagline | default(value=icon_page.description) }}</span>
+  <span class="app-ref-desc">{{ icon_page.keywords.tagline | default(icon_page.keywords.description) }}</span>
 </a>
 {% endif %}
 <article class="prose">
   <h1 class="page-label">{{ page.title }}</h1>
-  {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
-  {{ page.content | safe }}
+  {% if page.keywords.description %}<p class="lede">{{ page.keywords.description }}</p>{% endif %}
+  {{ body | safe }}
 </article>
-{% endblock content %}
+{% endblock %}
