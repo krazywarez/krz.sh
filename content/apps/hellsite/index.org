@@ -1,0 +1,34 @@
+#+TITLE: hellsite.
+#+DESCRIPTION: A native Tumblr client for iPhone, iPad and Mac.
+#+WEIGHT: 6
+#+TAGLINE: Tumblr, native.
+#+PLATFORMS: iPhone, iPad, Mac
+#+TINT: #2a5bd7
+#+PRIVACY: /privacy/hellsite/
+#+HIGHLIGHT_1: Your place, kept | Come back to "38 new since 9:14" and one tap to where you left off, on every device.
+#+HIGHLIGHT_2: Everything the API offers | Posts, reblogs, the composer, drafts and queue, asks, activity, communities and blocks.
+#+HIGHLIGHT_3: Built for Apple | Liquid Glass, widgets, Shortcuts, Handoff, a share extension and keyboard shortcuts on Mac.
+
+hellsite. is a Tumblr client written in Swift and SwiftUI for iPhone, iPad and
+Mac. It covers what Tumblr's public API offers: the dashboard, blogs, tags and
+posts in every NPF layout; likes, reblogs and follows; a block editor that
+writes NPF directly, with drafts, the queue, scheduling, submissions and asks;
+activity with notifications; communities; blocks and filtered tags. It does not
+scrape, use private endpoints or show web pages in place of missing features.
+
+The dashboard shows what Tumblr sends, in order. A read marker remembers where
+you stopped, so after a day away the app offers to jump there and read up to
+the newest post, and it syncs between your devices through iCloud. Calm mode
+hides note counts, keeps GIFs and video still until you tap them, and holds
+new posts behind a button.
+Content warnings and your own mutes cover a post behind a tap instead of
+hiding it.
+
+There is a gallery of photo and video posts, a reading view for long text,
+personal lists that read up to 20 blogs as one feed, a read-later shelf, and
+tools for your own blog: post performance, a queue planner and bulk retagging.
+On iPad and Mac the app has a sidebar, a wide feed and the post beside it, with
+windows for each account on Mac.
+
+No krz account, ads or tracking. You sign in with Tumblr, and the app talks to
+Tumblr directly.

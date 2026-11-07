@@ -1,0 +1,66 @@
+#+TITLE: hellsite. Privacy Policy
+#+DESCRIPTION: Privacy policy for hellsite., the Tumblr client for iPhone, iPad and Mac.
+#+WEIGHT: 6
+#+APP: apps/hellsite/index.org
+
+/last updated: 7 november 2026/
+
+hellsite. has no krz accounts, no analytics, no advertising, no in-app
+purchases, and no third-party trackers or SDKs. there is no krz server: the app
+talks to Tumblr, and to Apple for the features listed below. we collect
+nothing.
+
+* tumblr
+you sign in with your Tumblr account in a browser sheet run by Apple; your
+password goes to Tumblr, never to the app. Tumblr returns a sign-in token,
+which the app keeps in the device's keychain and uses for every request. the
+sign-in page returns to the app through a krz.sh address that Apple's sheet
+catches on the device; that address is never loaded from our server.
+
+everything the app shows and does goes through Tumblr's API: reading your
+dashboard, blogs, tags and activity, and liking, reblogging, following,
+posting and blocking. what you post and do is handled by Tumblr under
+[[https://www.tumblr.com/privacy][Tumblr's privacy policy]]. requests carry the
+app's name and version and no other identifiers. as with any internet request,
+Tumblr's servers receive your IP address.
+
+* posts and images on your device
+posts and images from Tumblr are cached on the device to save requests and are
+deleted after 72 hours at most, as Tumblr's API terms require. signing out of
+every account deletes the image cache.
+
+* kept on your device
+your settings, saved tags, tag presets and post templates, mutes and content
+warnings, and posts that couldn't be sent yet (the outbox) stay on the device.
+the outbox, your blog names and today's posting limits are in a container
+shared with the app's widget and share extension, so those can show them; the
+widget and the share extension make no requests of their own.
+
+* iCloud
+the app syncs a few things between your own devices through your iCloud
+account (Apple's key-value store): where you stopped reading in each feed (a
+post id and its time, not the post), your personal lists (blog names), and the
+read-later shelf (blog names and post ids, not the posts). these are stored by
+Apple under your Apple Account and are not visible to us. signing out of iCloud
+on a device stops the sync there.
+
+* handoff
+when you move from one of your devices to another, Handoff passes the screen
+you were on and, for the dashboard, where you stopped reading. this goes
+between your own devices through Apple.
+
+* notifications
+if you allow notifications, the app checks your Tumblr activity in the
+background, at most as often as iOS allows, and shows notifications created on
+the device. nothing goes to a push server.
+
+* photos
+the app reads only the photos you pick when posting. if you save an image from
+a post, it asks for permission to add to your library and cannot see the rest
+of it.
+
+* changes
+if this policy changes, the updated version will be posted here with a new date.
+
+* contact
+questions: [[mailto:root@krz.sh][root@krz.sh]].
