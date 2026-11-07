@@ -17,7 +17,7 @@ which the app keeps in the device's keychain and uses for every request. the
 sign-in page returns to the app through a krz.sh address that Apple's sheet
 catches on the device; that address is never loaded from our server.
 
-everything the app shows and does goes through Tumblr's API: reading your
+everything the app shows and does goes straight to Tumblr: reading your
 dashboard, blogs, tags and activity, and liking, reblogging, following,
 posting and blocking. what you post and do is handled by Tumblr under
 [[https://www.tumblr.com/privacy][Tumblr's privacy policy]]. requests carry the
@@ -26,7 +26,7 @@ Tumblr's servers receive your IP address.
 
 * posts and images on your device
 posts and images from Tumblr are cached on the device to save requests and are
-deleted after 72 hours at most, as Tumblr's API terms require. signing out of
+deleted after 72 hours at most, as Tumblr's terms for apps require. signing out of
 every account deletes the image cache.
 
 * kept on your device
