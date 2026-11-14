@@ -1,5 +1,5 @@
 #+TITLE: Privacy
-#+DESCRIPTION: Privacy policies for krz iOS apps.
+#+DESCRIPTION: Privacy policies for krz apps, purchases and this website.
 #+TEMPLATE: section.html
 #+PLAIN: t
 
@@ -10,3 +10,25 @@ and a small number of named exceptions. Each policy below lists its own.
 
 gitbay’s policy lives with the forge:
 [[https://gitbay.org/privacy][gitbay.org/privacy]].
+
+* This website
+krz.sh is a set of static pages. It sets no cookies and runs no analytics or
+trackers. It is served through Cloudflare, which handles your network (IP)
+address to deliver the pages and protect the site, under the
+[[https://www.cloudflare.com/privacypolicy/][Cloudflare privacy policy]].
+
+* Purchases
+*orgstar+ for Mac* is sold by Paddle, the merchant of record. Paddle collects
+your payment and billing details under the
+[[https://www.paddle.com/legal/privacy][Paddle privacy notice]]; we never see
+your card. We receive from Paddle what we need to support the purchase: your
+email address, country, and the transaction. The license key page reads your
+email address and transaction ID from Paddle and puts them in the key, which
+stays on your Mac and is checked there, offline. We keep no database of keys;
+Paddle keeps the purchase record.
+
+*Purchases in the App Store* are handled by Apple. We don't receive your name,
+email address or payment details, only Apple's sales reports.
+
+If you email us, we keep the conversation to answer you and don't share it.
+Questions: [[mailto:root@krz.sh][root@krz.sh]].
