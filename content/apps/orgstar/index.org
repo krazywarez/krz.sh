@@ -7,7 +7,6 @@
 #+ICON: https://i.krz.sh/apps/orgstar/icon.png
 #+HERO: https://i.krz.sh/apps/orgstar/hero.jpg?v=0.7.0
 #+APPSTORE: https://apps.apple.com/us/app/orgstar-org-mode-agenda/id6821552018
-#+REPO: https://gitbay.org/krz/orgstar
 #+PRIVACY: /privacy/orgstar/
 #+HIGHLIGHT_1: Plain text | Reads and writes the same files Emacs does, byte for byte.
 #+HIGHLIGHT_2: Agenda | Scheduled items, deadlines, habits and calendar events.
