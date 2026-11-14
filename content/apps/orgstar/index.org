@@ -53,6 +53,20 @@ brew tap krz/tap https://gitbay.org/krz/homebrew-tap.git
 brew install --cask orgstar
 #+end_src
 
+* orgstar+
+editing, the agenda, capture, clocking, tables, search, and HTML and Markdown
+export are free. orgstar+ adds running and tangling source blocks; PDF, Word and
+other export, and publishing; encrypted entries; org-roam nodes and backlinks;
+widgets, the Apple Watch app and the clock Live Activity; Calendar and
+Reminders in the agenda; and Shortcuts actions.
+
+- iPhone and iPad: $1.99 a month, $19.99 a year, or $39.99 once, in the app
+- Mac: $39.99 once, for a license key
+
+prices are in US dollars; checkout shows your currency and any tax. if you
+installed orgstar before orgstar+, it's included. see the
+[[/terms/][terms]] and [[/refunds/][refund policy]].
+
 * on iPhone and iPad
 the iOS app has the editor, agenda, capture, search, clocking, reminders,
 export and tangling, plus Home Screen and Lock Screen widgets and a Live

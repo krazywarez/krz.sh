@@ -1,0 +1,56 @@
+#+TITLE: Terms of Sale
+#+DESCRIPTION: Terms for buying paid features in krz apps, starting with orgstar+.
+#+TEMPLATE: page.html
+
+/last updated: 14 november 2026/
+
+these terms cover paid features in krz apps. the only one today is orgstar+, in
+[[/apps/orgstar/][orgstar]]. "we" means Christian Cleberg, who makes and sells
+krz apps. questions: [[mailto:root@krz.sh][root@krz.sh]].
+
+* what orgstar+ is
+orgstar+ adds running and tangling source blocks; PDF, Word and other export,
+and publishing; encrypted entries; org-roam nodes, daily notes and backlinks;
+widgets, the Apple Watch app and the clock Live Activity; Calendar and Reminders
+in the agenda; and Shortcuts actions. editing, the agenda, capture, clocking,
+tables, search, and HTML and Markdown export stay free.
+
+| where                      | how                      | price (USD)                                           |
+|----------------------------+--------------------------+-------------------------------------------------------|
+| iPhone and iPad            | in the app, App Store    | $1.99 a month, $19.99 a year, or $39.99 once (lifetime) |
+| Mac                        | license key, from Paddle | $39.99 once                                           |
+
+the App Store and Paddle checkout show the price in your currency, with any tax
+for where you are.
+
+* who sells it
+- *Mac:* [[https://www.paddle.com][Paddle.com]] is the merchant of record for
+  orgstar+ for Mac. it takes the payment, charges any sales tax or VAT, and
+  issues the receipt. [[https://www.paddle.com/legal/checkout-buyer-terms][Paddle's buyer terms]]
+  apply to the purchase.
+- *iPhone and iPad:* Apple sells orgstar+ through the App Store, under Apple's
+  [[https://www.apple.com/legal/internet-services/itunes/dev/stdeula/][licensed application end user license agreement]].
+
+* the Mac license key
+after checkout you get a license key. it is for your own use, on the Macs you
+use, and it does not expire. please don't share or publish it.
+
+* subscriptions
+the monthly and yearly plans on iPhone and iPad renew automatically until you
+cancel them in your Apple Account settings, at least 24 hours before the current
+period ends.
+
+* if you used orgstar before orgstar+
+everyone who installed orgstar before orgstar+ keeps all of its features without
+buying it.
+
+* refunds
+see the [[/refunds/][refund policy]].
+
+* no warranty
+krz apps are provided as they are. to the extent the law allows, we are not
+liable for more than what you paid for the purchase in question.
+
+* changes
+if these terms change, the new version will be posted here with a new date.
+changes don't apply to purchases made before them.

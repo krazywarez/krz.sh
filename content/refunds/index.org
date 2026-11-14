@@ -1,0 +1,21 @@
+#+TITLE: Refund Policy
+#+DESCRIPTION: Refunds for orgstar+ and other paid features in krz apps.
+#+TEMPLATE: page.html
+
+/last updated: 14 november 2026/
+
+* orgstar+ for Mac
+if orgstar+ isn't right for you, you can have a full refund within 14 days of
+buying it, for any reason. email [[mailto:root@krz.sh][root@krz.sh]] with the
+email address you bought with, or ask Paddle, which handled the payment, at
+[[https://paddle.net][paddle.net]]. the refund goes back to the way you paid.
+
+after 14 days we refund where the law requires it, and may in other cases.
+
+* orgstar+ on iPhone and iPad
+purchases and subscriptions in the App Store are refunded by Apple, not by us.
+request one at [[https://reportaproblem.apple.com][reportaproblem.apple.com]].
+to stop a subscription renewing, cancel it in your Apple Account settings.
+
+* contact
+questions: [[mailto:root@krz.sh][root@krz.sh]].
