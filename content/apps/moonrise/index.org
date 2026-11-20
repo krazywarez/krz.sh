@@ -6,6 +6,7 @@
 #+TINT: #0a1424
 #+ICON: https://i.krz.sh/apps/moonrise/icon.png
 #+HERO: https://i.krz.sh/apps/moonrise/hero.jpg?v=5.8.0.1
+#+APPSTORE: https://apps.apple.com/us/app/moonrise-sky-and-space/id6824081151
 #+REPO: https://gitbay.org/krz/moonrise
 #+PRIVACY: /privacy/moonrise/
 #+HIGHLIGHT_1: Your sky | Stars, planets and the Moon for your place and time, from 3000 BCE to 3000 CE.
