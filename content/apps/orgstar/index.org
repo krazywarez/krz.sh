@@ -34,18 +34,31 @@ agenda, rebuilt from the files whenever they change.
 * what it does
 - edit headings, TODO keywords, priorities, tags, timestamps, lists, tables and
   source blocks, styled as you type
+- complete as you type from your files, id links and property values, and
+  expand snippets with tab stops
 - see scheduled items, deadlines, habits and calendar events in the agenda
 - capture with Org’s templates, from the app, the share sheet, Shortcuts or
   org-protocol links
 - clock in and out of entries and read clock reports
 - compute table formulas and tangle source blocks into files
-- export to HTML and Markdown
-- search across file names, headings and text
+- export to HTML, Markdown, LaTeX, ODT, PDF, Word and plain text, and publish
+  projects
+- search across file names, headings and text, replace across files, and
+  rename a tag or TODO keyword everywhere
+- check files with org-lint's rules
+- encrypt entries tagged =crypt= and whole =.org.gpg= files, readable by Emacs
+  and gpg, and unlock saved passphrases with Face ID or Touch ID if you choose
+- see a file's recovery versions and git commits in one history
+- pick up the open file where you left it with Handoff between Mac, iPhone and
+  iPad
 
 * on the Mac
-the Mac app adds Emacs, Mac and Doom (Vim) keys, a board view, Babel for more
-languages, and export through Emacs when it is installed. install it with
-Homebrew:
+the Mac app adds Emacs, Mac and Doom (Vim) keys, keyboard macros, a command
+palette, a board view, Babel for more languages, and export through Emacs when
+it is installed. get it from the
+[[https://apps.apple.com/us/app/orgstar-org-mode-agenda/id6821552018][Mac App Store]],
+or install the download version, which can also commit your folders to git as
+you save, with Homebrew:
 
 #+begin_src sh
 brew tap krz/tap https://gitbay.org/krz/homebrew-tap.git
@@ -60,7 +73,8 @@ widgets, the Apple Watch app and the clock Live Activity; Calendar and
 Reminders in the agenda; and Shortcuts actions.
 
 - iPhone and iPad: $1.99 a month, $19.99 a year, or $39.99 once, in the app
-- Mac: $39.99 once, for a license key
+- Mac App Store: the same purchase as on iPhone and iPad
+- Mac download: $39.99 once, for a license key
 
 prices are in US dollars; checkout shows your currency and any tax. if you
 installed orgstar before orgstar+, it's included. see the
@@ -69,8 +83,11 @@ installed orgstar before orgstar+, it's included. see the
 * on iPhone and iPad
 the iOS app has the editor, agenda, capture, search, clocking, reminders,
 export and tangling, plus Home Screen and Lock Screen widgets and a Live
-Activity for the running clock. it works on folders you choose in iCloud Drive
-or another app’s storage, such as a Syncthing folder.
+Activity for the running clock. every screen has the same Commands list, the
+key bar above the keyboard is yours to arrange, and on iPad there's a sidebar,
+the menu bar and keyboard shortcuts. it works on folders you choose in
+iCloud Drive or another app’s storage, such as a Syncthing folder, and syncs git
+folders through Working Copy.
 
 * the manual
 every feature is documented in the
