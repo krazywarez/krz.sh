@@ -1,7 +1,7 @@
 #+title: krz.sh
 
 * what
-source for krz.sh, the krz website. built with [[https://gitbay.org/krz/orgo][orgo]].
+source for krz.sh, the krz website. built with [[https://github.com/krz-labs/orgo][orgo]].
 
 * develop
 #+begin_src sh
