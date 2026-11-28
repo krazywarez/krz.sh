@@ -1,0 +1,39 @@
+#+TITLE: gitbay Privacy Policy
+#+DESCRIPTION: Privacy policy for gitbay, the iOS client for gitbay forges.
+#+WEIGHT: 7
+#+APP: apps/gitbay/index.org
+
+/last updated: 28 november 2026/
+
+gitbay is a native iOS client for a gitbay instance you name at sign-in. it has
+no account of its own, no sign-up, and no server of ours behind it: it talks
+only to that instance, over HTTPS.
+
+* what we collect
+nothing. there is no krz account system, no analytics, no crash reporting, no
+ads, and no third-party trackers or SDKs.
+
+* what stays on your device
+signing in stores one API token in the iOS Keychain. which account is active is
+kept in app preferences; nothing else is kept on the device. removing the
+account deletes the token from the Keychain. tokens are minted over SSH or on
+the instance's settings page, and =gitbay auth token revoke= ends the app's
+access immediately.
+
+* network connections
+every request goes to the instance you signed in to, carries your token, and is
+governed by that instance's own terms and privacy policy. we are not a party to
+that traffic and never see it.
+
+* notifications
+if you turn on notifications, the app registers your device with that
+instance, and the instance sends each notification through Apple's push
+service. the notification text names the repository and the item, private
+repositories included, and appears on the lock screen. removing your devices in
+the instance's settings, or turning notifications off, stops it.
+
+* changes
+if this policy changes, the updated version will be posted here with a new date.
+
+* contact
+questions: [[mailto:root@krz.sh][root@krz.sh]].
