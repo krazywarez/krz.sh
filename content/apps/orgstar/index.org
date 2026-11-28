@@ -78,7 +78,7 @@ you save and adds an =orgstar= command for the agenda, capture, clocking and
 export in Terminal, with Homebrew:
 
 #+begin_src sh
-brew tap krz/tap https://gitbay.org/krz/homebrew-tap.git
+brew tap krz-labs/tap
 brew install --cask orgstar
 #+end_src
 
