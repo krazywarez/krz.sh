@@ -8,9 +8,6 @@ no analytics, no ads, and no third-party trackers or SDKs. Your data stays on
 your device, apart from the requests an app makes to the service you point it at
 and a small number of named exceptions. Each policy below lists its own.
 
-gitbay’s policy lives with the forge:
-[[https://gitbay.org/privacy][gitbay.org/privacy]].
-
 * This website
 krz.sh is a set of static pages. It sets no cookies and runs no analytics or
 trackers. It is served through Cloudflare, which handles your network (IP)
