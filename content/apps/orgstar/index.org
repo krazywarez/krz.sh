@@ -110,7 +110,7 @@ folders through Working Copy.
 
 * the manual
 every feature is documented in the
-[[https://krz.gitbay.site/orgstar/][orgstar manual]].
+[[https://files.krz.sh/orgstar/][orgstar manual]].
 
 * no analytics, no ads, no SDKs
 no accounts, no tracking, no third-party SDKs. your notes stay in your folders.
